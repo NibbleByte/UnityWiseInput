@@ -1,2 +1,2 @@
-git subtree push --prefix Assets/DevLocker/GFrame origin upm
+git subtree push --prefix Assets/DevLocker/Input/WiseInput origin upm
 pause

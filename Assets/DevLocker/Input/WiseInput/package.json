@@ -1,0 +1,23 @@
+{
+    "name": "devlocker.input.wiseinput",
+    "displayName": "Wise Input",
+    "version": "1.0.0",
+    "unity": "6000.3",
+    "description": "Thin wrapper around the Unity Input System that provides better usability and input conflicts resolving.",
+	"category": "Framework",
+    "keywords": [
+        "input"
+    ],
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NibbleByte/UnityWiseInput.git"
+    },
+    "samples": [
+        {
+          "displayName": "UI Scopes Usage",
+          "description": "Sample scene with assets to showcase UI hotkeys, scopes and proper input handling.",
+          "path": "SampleScene~"
+        }
+    ]
+}
