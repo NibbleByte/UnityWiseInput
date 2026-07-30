@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GFrame_Switch_A_Atlas
+      name: WiseInput_Switch_A_Atlas
       rect:
         serializedVersion: 2
         x: 0
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_B_Atlas
+      name: WiseInput_Switch_B_Atlas
       rect:
         serializedVersion: 2
         x: 100
@@ -171,7 +171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Controllers_Atlas
+      name: WiseInput_Switch_Controllers_Atlas
       rect:
         serializedVersion: 2
         x: 200
@@ -192,7 +192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Dpad_Left_Atlas
+      name: WiseInput_Switch_Dpad_Left_Atlas
       rect:
         serializedVersion: 2
         x: 300
@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Left_Stick_Atlas
+      name: WiseInput_Switch_Left_Stick_Atlas
       rect:
         serializedVersion: 2
         x: 400
@@ -234,7 +234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_X_Atlas
+      name: WiseInput_Switch_X_Atlas
       rect:
         serializedVersion: 2
         x: 500
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Controller_Left_Atlas
+      name: WiseInput_Switch_Controller_Left_Atlas
       rect:
         serializedVersion: 2
         x: 0
@@ -276,7 +276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Controller_Right_Atlas
+      name: WiseInput_Switch_Controller_Right_Atlas
       rect:
         serializedVersion: 2
         x: 100
@@ -297,7 +297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Controllers_Separate_Atlas
+      name: WiseInput_Switch_Controllers_Separate_Atlas
       rect:
         serializedVersion: 2
         x: 200
@@ -318,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Dpad_Right_Atlas
+      name: WiseInput_Switch_Dpad_Right_Atlas
       rect:
         serializedVersion: 2
         x: 300
@@ -339,7 +339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Minus_Atlas
+      name: WiseInput_Switch_Minus_Atlas
       rect:
         serializedVersion: 2
         x: 400
@@ -360,7 +360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Y_Atlas
+      name: WiseInput_Switch_Y_Atlas
       rect:
         serializedVersion: 2
         x: 500
@@ -381,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Down_Atlas
+      name: WiseInput_Switch_Down_Atlas
       rect:
         serializedVersion: 2
         x: 0
@@ -402,7 +402,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Dpad_Atlas
+      name: WiseInput_Switch_Dpad_Atlas
       rect:
         serializedVersion: 2
         x: 100
@@ -423,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Dpad_Down_Atlas
+      name: WiseInput_Switch_Dpad_Down_Atlas
       rect:
         serializedVersion: 2
         x: 200
@@ -444,7 +444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Dpad_Up_Atlas
+      name: WiseInput_Switch_Dpad_Up_Atlas
       rect:
         serializedVersion: 2
         x: 300
@@ -465,7 +465,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Plus_Atlas
+      name: WiseInput_Switch_Plus_Atlas
       rect:
         serializedVersion: 2
         x: 400
@@ -486,7 +486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Home_Atlas
+      name: WiseInput_Switch_Home_Atlas
       rect:
         serializedVersion: 2
         x: 0
@@ -507,7 +507,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_LB_Atlas
+      name: WiseInput_Switch_LB_Atlas
       rect:
         serializedVersion: 2
         x: 100
@@ -528,7 +528,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_LT_Atlas
+      name: WiseInput_Switch_LT_Atlas
       rect:
         serializedVersion: 2
         x: 200
@@ -549,7 +549,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Left_Atlas
+      name: WiseInput_Switch_Left_Atlas
       rect:
         serializedVersion: 2
         x: 300
@@ -570,7 +570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_RB_Atlas
+      name: WiseInput_Switch_RB_Atlas
       rect:
         serializedVersion: 2
         x: 400
@@ -591,7 +591,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_RT_Atlas
+      name: WiseInput_Switch_RT_Atlas
       rect:
         serializedVersion: 2
         x: 0
@@ -612,7 +612,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Right_Atlas
+      name: WiseInput_Switch_Right_Atlas
       rect:
         serializedVersion: 2
         x: 100
@@ -633,7 +633,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Right_Stick_Atlas
+      name: WiseInput_Switch_Right_Stick_Atlas
       rect:
         serializedVersion: 2
         x: 200
@@ -654,7 +654,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Square_Atlas
+      name: WiseInput_Switch_Square_Atlas
       rect:
         serializedVersion: 2
         x: 300
@@ -675,7 +675,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Switch_Up_Atlas
+      name: WiseInput_Switch_Up_Atlas
       rect:
         serializedVersion: 2
         x: 400
@@ -706,33 +706,33 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GFrame_Switch_Right_Atlas: -7310948028979659634
-      GFrame_Switch_RT_Atlas: 3848943698006760472
-      GFrame_Switch_Controller_Left_Atlas: 5274821336779253642
-      GFrame_Switch_B_Atlas: -3654194640303520644
-      GFrame_Switch_Right_Stick_Atlas: -972859589861364456
-      GFrame_Switch_A_Atlas: -1741526903725137169
-      GFrame_Switch_Dpad_Right_Atlas: -4274548390984181059
-      GFrame_Switch_Y_Atlas: -4893109735219205322
-      GFrame_Switch_LB_Atlas: 1258271756741070459
-      GFrame_Switch_LT_Atlas: 20149816135251549
-      GFrame_Switch_Dpad_Atlas: -6034382595333101598
-      GFrame_Switch_Down_Atlas: 239471659882499025
-      GFrame_Switch_Left_Stick_Atlas: -69555551173401737
-      GFrame_Switch_Controller_Right_Atlas: 7396512246141854584
-      GFrame_Switch_Up_Atlas: 8436132923575205598
-      GFrame_Switch_X_Atlas: -504616746450803264
-      GFrame_Switch_Dpad_Up_Atlas: 6864504065611803004
-      GFrame_Switch_Left_Atlas: 492282222121357367
-      GFrame_Switch_Home_Atlas: -2296808971418938093
-      GFrame_Switch_Dpad_Down_Atlas: -4860255589414205976
-      GFrame_Switch_Square_Atlas: -298132061640786371
-      GFrame_Switch_Controllers_Atlas: 8104612632017467358
-      GFrame_Switch_RB_Atlas: 8679045882420028864
-      GFrame_Switch_Dpad_Left_Atlas: -8338416423931295848
-      GFrame_Switch_Minus_Atlas: 6193984616348186818
-      GFrame_Switch_Controllers_Separate_Atlas: 231056022334029277
-      GFrame_Switch_Plus_Atlas: -91155716160290454
+      WiseInput_Switch_Right_Atlas: -7310948028979659634
+      WiseInput_Switch_RT_Atlas: 3848943698006760472
+      WiseInput_Switch_Controller_Left_Atlas: 5274821336779253642
+      WiseInput_Switch_B_Atlas: -3654194640303520644
+      WiseInput_Switch_Right_Stick_Atlas: -972859589861364456
+      WiseInput_Switch_A_Atlas: -1741526903725137169
+      WiseInput_Switch_Dpad_Right_Atlas: -4274548390984181059
+      WiseInput_Switch_Y_Atlas: -4893109735219205322
+      WiseInput_Switch_LB_Atlas: 1258271756741070459
+      WiseInput_Switch_LT_Atlas: 20149816135251549
+      WiseInput_Switch_Dpad_Atlas: -6034382595333101598
+      WiseInput_Switch_Down_Atlas: 239471659882499025
+      WiseInput_Switch_Left_Stick_Atlas: -69555551173401737
+      WiseInput_Switch_Controller_Right_Atlas: 7396512246141854584
+      WiseInput_Switch_Up_Atlas: 8436132923575205598
+      WiseInput_Switch_X_Atlas: -504616746450803264
+      WiseInput_Switch_Dpad_Up_Atlas: 6864504065611803004
+      WiseInput_Switch_Left_Atlas: 492282222121357367
+      WiseInput_Switch_Home_Atlas: -2296808971418938093
+      WiseInput_Switch_Dpad_Down_Atlas: -4860255589414205976
+      WiseInput_Switch_Square_Atlas: -298132061640786371
+      WiseInput_Switch_Controllers_Atlas: 8104612632017467358
+      WiseInput_Switch_RB_Atlas: 8679045882420028864
+      WiseInput_Switch_Dpad_Left_Atlas: -8338416423931295848
+      WiseInput_Switch_Minus_Atlas: 6193984616348186818
+      WiseInput_Switch_Controllers_Separate_Atlas: 231056022334029277
+      WiseInput_Switch_Plus_Atlas: -91155716160290454
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

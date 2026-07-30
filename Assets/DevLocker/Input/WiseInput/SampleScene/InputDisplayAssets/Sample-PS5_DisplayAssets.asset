@@ -27,97 +27,97 @@ MonoBehaviour:
   BindingDisplays:
   - BindingPath: <Gamepad>/buttonSouth
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Cross">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Cross">
     DisplayShortText: 
   - BindingPath: <Gamepad>/buttonEast
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Circle">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Circle">
     DisplayShortText: 
   - BindingPath: <Gamepad>/buttonWest
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Square">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Square">
     DisplayShortText: 
   - BindingPath: <Gamepad>/buttonNorth
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Triangle">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Triangle">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Dpad">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Dpad">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad/up
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Dpad_Up">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Dpad_Up">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad/down
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Dpad_Down">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Dpad_Down">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad/left
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Dpad_Left">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Dpad_Left">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad/right
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Dpad_Right">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Dpad_Right">
     DisplayShortText: 
   - BindingPath: <Gamepad>/leftStick
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Left_Stick">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Left_Stick">
     DisplayShortText: 
   - BindingPath: Left Stick
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Left_Stick">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Left_Stick">
     DisplayShortText: 
   - BindingPath: <Gamepad>/leftStickPress
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Left_Stick">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Left_Stick">
     DisplayShortText: 
   - BindingPath: <Gamepad>/rightStick
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Right_Stick">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Right_Stick">
     DisplayShortText: 
   - BindingPath: Right Stick
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Right_Stick">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Right_Stick">
     DisplayShortText: 
   - BindingPath: <Gamepad>/rightStickPress
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Right_Stick">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Right_Stick">
     DisplayShortText: 
   - BindingPath: <Gamepad>/select
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Share">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Share">
     DisplayShortText: 
   - BindingPath: <Gamepad>/start
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Options">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Options">
     DisplayShortText: 
   - BindingPath: <Gamepad>/leftShoulder
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_L1">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_L1">
     DisplayShortText: 
   - BindingPath: <Gamepad>/rightShoulder
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_R1">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_R1">
     DisplayShortText: 
   - BindingPath: <Gamepad>/leftTrigger
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_L2">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_L2">
     DisplayShortText: 
   - BindingPath: <Gamepad>/rightTrigger
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_R2">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_R2">
     DisplayShortText: 
   - BindingPath: '*/{Submit}'
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Cross">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Cross">
     DisplayShortText: 
   - BindingPath: '*/{Back}'
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Circle">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Circle">
     DisplayShortText: 
   - BindingPath: '*/{Cancel}'
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_PS5_SpriteAsset" name="GFrame_PS5_Circle">
+    DisplayText: <sprite="WiseInput_PS5_SpriteAsset" name="WiseInput_PS5_Circle">
     DisplayShortText: 

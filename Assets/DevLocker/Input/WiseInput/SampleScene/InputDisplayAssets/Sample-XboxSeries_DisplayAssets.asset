@@ -26,97 +26,97 @@ MonoBehaviour:
   BindingDisplays:
   - BindingPath: <Gamepad>/buttonSouth
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_A">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_A">
     DisplayShortText: 
   - BindingPath: <Gamepad>/buttonEast
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_B">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_B">
     DisplayShortText: 
   - BindingPath: <Gamepad>/buttonWest
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_X">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_X">
     DisplayShortText: 
   - BindingPath: <Gamepad>/buttonNorth
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Y">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Y">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Dpad">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Dpad">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad/up
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Dpad_Up">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Dpad_Up">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad/down
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Dpad_Down">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Dpad_Down">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad/left
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Dpad_Left">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Dpad_Left">
     DisplayShortText: 
   - BindingPath: <Gamepad>/dpad/right
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Dpad_Right">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Dpad_Right">
     DisplayShortText: 
   - BindingPath: <Gamepad>/leftStick
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Left_Stick">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Left_Stick">
     DisplayShortText: 
   - BindingPath: Left Stick
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Left_Stick">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Left_Stick">
     DisplayShortText: 
   - BindingPath: <Gamepad>/leftStickPress
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Left_Stick">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Left_Stick">
     DisplayShortText: 
   - BindingPath: <Gamepad>/rightStick
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Right_Stick">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Right_Stick">
     DisplayShortText: 
   - BindingPath: Right Stick
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Right_Stick">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Right_Stick">
     DisplayShortText: 
   - BindingPath: <Gamepad>/rightStickPress
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Right_Stick">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Right_Stick">
     DisplayShortText: 
   - BindingPath: <Gamepad>/select
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_View">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_View">
     DisplayShortText: 
   - BindingPath: <Gamepad>/start
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_Menu">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_Menu">
     DisplayShortText: 
   - BindingPath: <Gamepad>/leftShoulder
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_LB">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_LB">
     DisplayShortText: 
   - BindingPath: <Gamepad>/rightShoulder
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_RB">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_RB">
     DisplayShortText: 
   - BindingPath: <Gamepad>/leftTrigger
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_LT">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_LT">
     DisplayShortText: 
   - BindingPath: <Gamepad>/rightTrigger
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_RT">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_RT">
     DisplayShortText: 
   - BindingPath: '*/{Submit}'
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_A">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_A">
     DisplayShortText: 
   - BindingPath: '*/{Back}'
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_B">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_B">
     DisplayShortText: 
   - BindingPath: '*/{Cancel}'
     UseDefaultTexts: 0
-    DisplayText: <sprite="GFrame_Xbox_Series_SpriteAsset" name="GFrame_XboxSeriesX_B">
+    DisplayText: <sprite="WiseInput_Xbox_Series_SpriteAsset" name="WiseInput_XboxSeriesX_B">
     DisplayShortText: 

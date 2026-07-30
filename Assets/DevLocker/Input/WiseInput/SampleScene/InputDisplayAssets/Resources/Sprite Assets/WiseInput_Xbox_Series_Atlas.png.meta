@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_A_Atlas
+      name: WiseInput_XboxSeriesX_A_Atlas
       rect:
         serializedVersion: 2
         x: 0
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_B_Atlas
+      name: WiseInput_XboxSeriesX_B_Atlas
       rect:
         serializedVersion: 2
         x: 100
@@ -171,7 +171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Dpad_Left_Atlas
+      name: WiseInput_XboxSeriesX_Dpad_Left_Atlas
       rect:
         serializedVersion: 2
         x: 200
@@ -192,7 +192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Left_Stick_Atlas
+      name: WiseInput_XboxSeriesX_Left_Stick_Atlas
       rect:
         serializedVersion: 2
         x: 300
@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Share_Atlas
+      name: WiseInput_XboxSeriesX_Share_Atlas
       rect:
         serializedVersion: 2
         x: 400
@@ -234,7 +234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Dpad_Atlas
+      name: WiseInput_XboxSeriesX_Dpad_Atlas
       rect:
         serializedVersion: 2
         x: 0
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Dpad_Down_Atlas
+      name: WiseInput_XboxSeriesX_Dpad_Down_Atlas
       rect:
         serializedVersion: 2
         x: 100
@@ -276,7 +276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Dpad_Right_Atlas
+      name: WiseInput_XboxSeriesX_Dpad_Right_Atlas
       rect:
         serializedVersion: 2
         x: 200
@@ -297,7 +297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Left_Stick_Click_Atlas
+      name: WiseInput_XboxSeriesX_Left_Stick_Click_Atlas
       rect:
         serializedVersion: 2
         x: 300
@@ -318,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_View_Atlas
+      name: WiseInput_XboxSeriesX_View_Atlas
       rect:
         serializedVersion: 2
         x: 400
@@ -339,7 +339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Dpad_Up_Atlas
+      name: WiseInput_XboxSeriesX_Dpad_Up_Atlas
       rect:
         serializedVersion: 2
         x: 0
@@ -360,7 +360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_LB_Atlas
+      name: WiseInput_XboxSeriesX_LB_Atlas
       rect:
         serializedVersion: 2
         x: 100
@@ -381,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_LT_Atlas
+      name: WiseInput_XboxSeriesX_LT_Atlas
       rect:
         serializedVersion: 2
         x: 200
@@ -402,7 +402,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Menu_Atlas
+      name: WiseInput_XboxSeriesX_Menu_Atlas
       rect:
         serializedVersion: 2
         x: 300
@@ -423,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_X_Atlas
+      name: WiseInput_XboxSeriesX_X_Atlas
       rect:
         serializedVersion: 2
         x: 400
@@ -444,7 +444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_RB_Atlas
+      name: WiseInput_XboxSeriesX_RB_Atlas
       rect:
         serializedVersion: 2
         x: 0
@@ -465,7 +465,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_RT_Atlas
+      name: WiseInput_XboxSeriesX_RT_Atlas
       rect:
         serializedVersion: 2
         x: 100
@@ -486,7 +486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Right_Stick_Atlas
+      name: WiseInput_XboxSeriesX_Right_Stick_Atlas
       rect:
         serializedVersion: 2
         x: 200
@@ -507,7 +507,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Right_Stick_Click_Atlas
+      name: WiseInput_XboxSeriesX_Right_Stick_Click_Atlas
       rect:
         serializedVersion: 2
         x: 300
@@ -528,7 +528,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_XboxSeriesX_Y_Atlas
+      name: WiseInput_XboxSeriesX_Y_Atlas
       rect:
         serializedVersion: 2
         x: 400
@@ -559,26 +559,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GFrame_XboxSeriesX_Left_Stick_Atlas: 4968351689578236758
-      GFrame_XboxSeriesX_LT_Atlas: -5493107189843974798
-      GFrame_XboxSeriesX_Dpad_Down_Atlas: -3465367245165808207
-      GFrame_XboxSeriesX_Dpad_Up_Atlas: -3360601211976633034
-      GFrame_XboxSeriesX_A_Atlas: 6262464294226151831
-      GFrame_XboxSeriesX_Right_Stick_Atlas: 7820355741988194645
-      GFrame_XboxSeriesX_Left_Stick_Click_Atlas: -7183122544020843559
-      GFrame_XboxSeriesX_RT_Atlas: -6810288709471602748
-      GFrame_XboxSeriesX_Dpad_Atlas: -7435765356371496636
-      GFrame_XboxSeriesX_View_Atlas: -4798871514826683674
-      GFrame_XboxSeriesX_RB_Atlas: -6253032405577423402
-      GFrame_XboxSeriesX_Right_Stick_Click_Atlas: 8783832006898978187
-      GFrame_XboxSeriesX_Dpad_Right_Atlas: 4233494404227929795
-      GFrame_XboxSeriesX_Dpad_Left_Atlas: -5161024517672153960
-      GFrame_XboxSeriesX_X_Atlas: 1213565466801720594
-      GFrame_XboxSeriesX_B_Atlas: -1245356875341734919
-      GFrame_XboxSeriesX_Share_Atlas: 3922153681094066816
-      GFrame_XboxSeriesX_LB_Atlas: 6783249973594357752
-      GFrame_XboxSeriesX_Menu_Atlas: -1921355341620232533
-      GFrame_XboxSeriesX_Y_Atlas: 2280102086068699638
+      WiseInput_XboxSeriesX_Left_Stick_Atlas: 4968351689578236758
+      WiseInput_XboxSeriesX_LT_Atlas: -5493107189843974798
+      WiseInput_XboxSeriesX_Dpad_Down_Atlas: -3465367245165808207
+      WiseInput_XboxSeriesX_Dpad_Up_Atlas: -3360601211976633034
+      WiseInput_XboxSeriesX_A_Atlas: 6262464294226151831
+      WiseInput_XboxSeriesX_Right_Stick_Atlas: 7820355741988194645
+      WiseInput_XboxSeriesX_Left_Stick_Click_Atlas: -7183122544020843559
+      WiseInput_XboxSeriesX_RT_Atlas: -6810288709471602748
+      WiseInput_XboxSeriesX_Dpad_Atlas: -7435765356371496636
+      WiseInput_XboxSeriesX_View_Atlas: -4798871514826683674
+      WiseInput_XboxSeriesX_RB_Atlas: -6253032405577423402
+      WiseInput_XboxSeriesX_Right_Stick_Click_Atlas: 8783832006898978187
+      WiseInput_XboxSeriesX_Dpad_Right_Atlas: 4233494404227929795
+      WiseInput_XboxSeriesX_Dpad_Left_Atlas: -5161024517672153960
+      WiseInput_XboxSeriesX_X_Atlas: 1213565466801720594
+      WiseInput_XboxSeriesX_B_Atlas: -1245356875341734919
+      WiseInput_XboxSeriesX_Share_Atlas: 3922153681094066816
+      WiseInput_XboxSeriesX_LB_Atlas: 6783249973594357752
+      WiseInput_XboxSeriesX_Menu_Atlas: -1921355341620232533
+      WiseInput_XboxSeriesX_Y_Atlas: 2280102086068699638
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_A
+      name: WiseInput_Keyboard_Light_Atlas_A
       rect:
         serializedVersion: 2
         x: 0
@@ -145,7 +145,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_B
+      name: WiseInput_Keyboard_Light_Atlas_B
       rect:
         serializedVersion: 2
         x: 100
@@ -167,7 +167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_C
+      name: WiseInput_Keyboard_Light_Atlas_C
       rect:
         serializedVersion: 2
         x: 200
@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_D
+      name: WiseInput_Keyboard_Light_Atlas_D
       rect:
         serializedVersion: 2
         x: 300
@@ -211,7 +211,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_E
+      name: WiseInput_Keyboard_Light_Atlas_E
       rect:
         serializedVersion: 2
         x: 400
@@ -233,7 +233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F
+      name: WiseInput_Keyboard_Light_Atlas_F
       rect:
         serializedVersion: 2
         x: 500
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_G
+      name: WiseInput_Keyboard_Light_Atlas_G
       rect:
         serializedVersion: 2
         x: 600
@@ -277,7 +277,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_H
+      name: WiseInput_Keyboard_Light_Atlas_H
       rect:
         serializedVersion: 2
         x: 700
@@ -299,7 +299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_I
+      name: WiseInput_Keyboard_Light_Atlas_I
       rect:
         serializedVersion: 2
         x: 800
@@ -321,7 +321,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_J
+      name: WiseInput_Keyboard_Light_Atlas_J
       rect:
         serializedVersion: 2
         x: 900
@@ -343,7 +343,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_K
+      name: WiseInput_Keyboard_Light_Atlas_K
       rect:
         serializedVersion: 2
         x: 0
@@ -365,7 +365,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_L
+      name: WiseInput_Keyboard_Light_Atlas_L
       rect:
         serializedVersion: 2
         x: 100
@@ -387,7 +387,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_M
+      name: WiseInput_Keyboard_Light_Atlas_M
       rect:
         serializedVersion: 2
         x: 200
@@ -409,7 +409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_N
+      name: WiseInput_Keyboard_Light_Atlas_N
       rect:
         serializedVersion: 2
         x: 300
@@ -431,7 +431,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_O
+      name: WiseInput_Keyboard_Light_Atlas_O
       rect:
         serializedVersion: 2
         x: 400
@@ -453,7 +453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_P
+      name: WiseInput_Keyboard_Light_Atlas_P
       rect:
         serializedVersion: 2
         x: 500
@@ -475,7 +475,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Q
+      name: WiseInput_Keyboard_Light_Atlas_Q
       rect:
         serializedVersion: 2
         x: 600
@@ -497,7 +497,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_R
+      name: WiseInput_Keyboard_Light_Atlas_R
       rect:
         serializedVersion: 2
         x: 700
@@ -519,7 +519,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_S
+      name: WiseInput_Keyboard_Light_Atlas_S
       rect:
         serializedVersion: 2
         x: 800
@@ -541,7 +541,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_T
+      name: WiseInput_Keyboard_Light_Atlas_T
       rect:
         serializedVersion: 2
         x: 900
@@ -563,7 +563,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_U
+      name: WiseInput_Keyboard_Light_Atlas_U
       rect:
         serializedVersion: 2
         x: 0
@@ -585,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_V
+      name: WiseInput_Keyboard_Light_Atlas_V
       rect:
         serializedVersion: 2
         x: 100
@@ -607,7 +607,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_W
+      name: WiseInput_Keyboard_Light_Atlas_W
       rect:
         serializedVersion: 2
         x: 200
@@ -629,7 +629,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_X
+      name: WiseInput_Keyboard_Light_Atlas_X
       rect:
         serializedVersion: 2
         x: 300
@@ -651,7 +651,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Y
+      name: WiseInput_Keyboard_Light_Atlas_Y
       rect:
         serializedVersion: 2
         x: 400
@@ -673,7 +673,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Z
+      name: WiseInput_Keyboard_Light_Atlas_Z
       rect:
         serializedVersion: 2
         x: 500
@@ -695,7 +695,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_0
+      name: WiseInput_Keyboard_Light_Atlas_0
       rect:
         serializedVersion: 2
         x: 600
@@ -717,7 +717,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_1
+      name: WiseInput_Keyboard_Light_Atlas_1
       rect:
         serializedVersion: 2
         x: 700
@@ -739,7 +739,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_2
+      name: WiseInput_Keyboard_Light_Atlas_2
       rect:
         serializedVersion: 2
         x: 800
@@ -761,7 +761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_3
+      name: WiseInput_Keyboard_Light_Atlas_3
       rect:
         serializedVersion: 2
         x: 900
@@ -783,7 +783,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_4
+      name: WiseInput_Keyboard_Light_Atlas_4
       rect:
         serializedVersion: 2
         x: 0
@@ -805,7 +805,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_5
+      name: WiseInput_Keyboard_Light_Atlas_5
       rect:
         serializedVersion: 2
         x: 100
@@ -827,7 +827,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_6
+      name: WiseInput_Keyboard_Light_Atlas_6
       rect:
         serializedVersion: 2
         x: 200
@@ -849,7 +849,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_7
+      name: WiseInput_Keyboard_Light_Atlas_7
       rect:
         serializedVersion: 2
         x: 300
@@ -871,7 +871,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_8
+      name: WiseInput_Keyboard_Light_Atlas_8
       rect:
         serializedVersion: 2
         x: 400
@@ -893,7 +893,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_9
+      name: WiseInput_Keyboard_Light_Atlas_9
       rect:
         serializedVersion: 2
         x: 500
@@ -915,7 +915,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F1
+      name: WiseInput_Keyboard_Light_Atlas_F1
       rect:
         serializedVersion: 2
         x: 600
@@ -937,7 +937,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F2
+      name: WiseInput_Keyboard_Light_Atlas_F2
       rect:
         serializedVersion: 2
         x: 700
@@ -959,7 +959,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F3
+      name: WiseInput_Keyboard_Light_Atlas_F3
       rect:
         serializedVersion: 2
         x: 800
@@ -981,7 +981,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F4
+      name: WiseInput_Keyboard_Light_Atlas_F4
       rect:
         serializedVersion: 2
         x: 900
@@ -1003,7 +1003,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F5
+      name: WiseInput_Keyboard_Light_Atlas_F5
       rect:
         serializedVersion: 2
         x: 0
@@ -1025,7 +1025,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F6
+      name: WiseInput_Keyboard_Light_Atlas_F6
       rect:
         serializedVersion: 2
         x: 100
@@ -1047,7 +1047,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F7
+      name: WiseInput_Keyboard_Light_Atlas_F7
       rect:
         serializedVersion: 2
         x: 200
@@ -1069,7 +1069,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F8
+      name: WiseInput_Keyboard_Light_Atlas_F8
       rect:
         serializedVersion: 2
         x: 300
@@ -1091,7 +1091,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F9
+      name: WiseInput_Keyboard_Light_Atlas_F9
       rect:
         serializedVersion: 2
         x: 400
@@ -1113,7 +1113,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F10
+      name: WiseInput_Keyboard_Light_Atlas_F10
       rect:
         serializedVersion: 2
         x: 500
@@ -1135,7 +1135,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F11
+      name: WiseInput_Keyboard_Light_Atlas_F11
       rect:
         serializedVersion: 2
         x: 600
@@ -1157,7 +1157,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_F12
+      name: WiseInput_Keyboard_Light_Atlas_F12
       rect:
         serializedVersion: 2
         x: 700
@@ -1179,7 +1179,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Alt
+      name: WiseInput_Keyboard_Light_Atlas_Alt
       rect:
         serializedVersion: 2
         x: 800
@@ -1201,7 +1201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Arrow_Down
+      name: WiseInput_Keyboard_Light_Atlas_Arrow_Down
       rect:
         serializedVersion: 2
         x: 900
@@ -1223,7 +1223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Arrow_Left
+      name: WiseInput_Keyboard_Light_Atlas_Arrow_Left
       rect:
         serializedVersion: 2
         x: 0
@@ -1245,7 +1245,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Arrow_Right
+      name: WiseInput_Keyboard_Light_Atlas_Arrow_Right
       rect:
         serializedVersion: 2
         x: 100
@@ -1267,7 +1267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Arrow_Up
+      name: WiseInput_Keyboard_Light_Atlas_Arrow_Up
       rect:
         serializedVersion: 2
         x: 200
@@ -1289,7 +1289,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Asterisk
+      name: WiseInput_Keyboard_Light_Atlas_Asterisk
       rect:
         serializedVersion: 2
         x: 300
@@ -1311,7 +1311,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Backspace_Alt
+      name: WiseInput_Keyboard_Light_Atlas_Backspace_Alt
       rect:
         serializedVersion: 2
         x: 400
@@ -1333,7 +1333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Backspace
+      name: WiseInput_Keyboard_Light_Atlas_Backspace
       rect:
         serializedVersion: 2
         x: 500
@@ -1355,7 +1355,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Bracket_Left
+      name: WiseInput_Keyboard_Light_Atlas_Bracket_Left
       rect:
         serializedVersion: 2
         x: 600
@@ -1377,7 +1377,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Bracket_Right
+      name: WiseInput_Keyboard_Light_Atlas_Bracket_Right
       rect:
         serializedVersion: 2
         x: 700
@@ -1399,7 +1399,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Caps_Lock
+      name: WiseInput_Keyboard_Light_Atlas_Caps_Lock
       rect:
         serializedVersion: 2
         x: 800
@@ -1421,7 +1421,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Command
+      name: WiseInput_Keyboard_Light_Atlas_Command
       rect:
         serializedVersion: 2
         x: 900
@@ -1443,7 +1443,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Ctrl
+      name: WiseInput_Keyboard_Light_Atlas_Ctrl
       rect:
         serializedVersion: 2
         x: 0
@@ -1465,7 +1465,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Del
+      name: WiseInput_Keyboard_Light_Atlas_Del
       rect:
         serializedVersion: 2
         x: 100
@@ -1487,7 +1487,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_End
+      name: WiseInput_Keyboard_Light_Atlas_End
       rect:
         serializedVersion: 2
         x: 200
@@ -1509,7 +1509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Enter_Alt
+      name: WiseInput_Keyboard_Light_Atlas_Enter_Alt
       rect:
         serializedVersion: 2
         x: 300
@@ -1531,7 +1531,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Enter
+      name: WiseInput_Keyboard_Light_Atlas_Enter
       rect:
         serializedVersion: 2
         x: 400
@@ -1553,7 +1553,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Enter_Tall
+      name: WiseInput_Keyboard_Light_Atlas_Enter_Tall
       rect:
         serializedVersion: 2
         x: 500
@@ -1575,7 +1575,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Esc
+      name: WiseInput_Keyboard_Light_Atlas_Esc
       rect:
         serializedVersion: 2
         x: 600
@@ -1597,7 +1597,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Home
+      name: WiseInput_Keyboard_Light_Atlas_Home
       rect:
         serializedVersion: 2
         x: 700
@@ -1619,7 +1619,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Insert
+      name: WiseInput_Keyboard_Light_Atlas_Insert
       rect:
         serializedVersion: 2
         x: 800
@@ -1641,7 +1641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Mark_Left
+      name: WiseInput_Keyboard_Light_Atlas_Mark_Left
       rect:
         serializedVersion: 2
         x: 900
@@ -1663,7 +1663,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Mark_Right
+      name: WiseInput_Keyboard_Light_Atlas_Mark_Right
       rect:
         serializedVersion: 2
         x: 0
@@ -1685,7 +1685,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Minus
+      name: WiseInput_Keyboard_Light_Atlas_Minus
       rect:
         serializedVersion: 2
         x: 100
@@ -1707,7 +1707,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Mouse_Left
+      name: WiseInput_Keyboard_Light_Atlas_Mouse_Left
       rect:
         serializedVersion: 2
         x: 200
@@ -1729,7 +1729,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Mouse_Middle
+      name: WiseInput_Keyboard_Light_Atlas_Mouse_Middle
       rect:
         serializedVersion: 2
         x: 300
@@ -1751,7 +1751,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Mouse_Right
+      name: WiseInput_Keyboard_Light_Atlas_Mouse_Right
       rect:
         serializedVersion: 2
         x: 400
@@ -1773,7 +1773,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Mouse_Simple
+      name: WiseInput_Keyboard_Light_Atlas_Mouse_Simple
       rect:
         serializedVersion: 2
         x: 500
@@ -1795,7 +1795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Num_Lock
+      name: WiseInput_Keyboard_Light_Atlas_Num_Lock
       rect:
         serializedVersion: 2
         x: 600
@@ -1817,7 +1817,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Page_Down
+      name: WiseInput_Keyboard_Light_Atlas_Page_Down
       rect:
         serializedVersion: 2
         x: 700
@@ -1839,7 +1839,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Page_Up
+      name: WiseInput_Keyboard_Light_Atlas_Page_Up
       rect:
         serializedVersion: 2
         x: 800
@@ -1861,7 +1861,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Plus
+      name: WiseInput_Keyboard_Light_Atlas_Plus
       rect:
         serializedVersion: 2
         x: 900
@@ -1883,7 +1883,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Plus_Tall
+      name: WiseInput_Keyboard_Light_Atlas_Plus_Tall
       rect:
         serializedVersion: 2
         x: 0
@@ -1905,7 +1905,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Print_Screen
+      name: WiseInput_Keyboard_Light_Atlas_Print_Screen
       rect:
         serializedVersion: 2
         x: 100
@@ -1927,7 +1927,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Question
+      name: WiseInput_Keyboard_Light_Atlas_Question
       rect:
         serializedVersion: 2
         x: 200
@@ -1949,7 +1949,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Quote
+      name: WiseInput_Keyboard_Light_Atlas_Quote
       rect:
         serializedVersion: 2
         x: 300
@@ -1971,7 +1971,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Semicolon
+      name: WiseInput_Keyboard_Light_Atlas_Semicolon
       rect:
         serializedVersion: 2
         x: 400
@@ -1993,7 +1993,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Shift_Alt
+      name: WiseInput_Keyboard_Light_Atlas_Shift_Alt
       rect:
         serializedVersion: 2
         x: 500
@@ -2015,7 +2015,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Shift
+      name: WiseInput_Keyboard_Light_Atlas_Shift
       rect:
         serializedVersion: 2
         x: 600
@@ -2037,7 +2037,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Slash
+      name: WiseInput_Keyboard_Light_Atlas_Slash
       rect:
         serializedVersion: 2
         x: 700
@@ -2059,7 +2059,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Space
+      name: WiseInput_Keyboard_Light_Atlas_Space
       rect:
         serializedVersion: 2
         x: 800
@@ -2081,7 +2081,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Tab
+      name: WiseInput_Keyboard_Light_Atlas_Tab
       rect:
         serializedVersion: 2
         x: 900
@@ -2103,7 +2103,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Tilda
+      name: WiseInput_Keyboard_Light_Atlas_Tilda
       rect:
         serializedVersion: 2
         x: 0
@@ -2125,7 +2125,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GFrame_Keyboard_Light_Atlas_Win
+      name: WiseInput_Keyboard_Light_Atlas_Win
       rect:
         serializedVersion: 2
         x: 100
@@ -2160,98 +2160,98 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GFrame_Keyboard_Light_Atlas_0: 1194751676
-      GFrame_Keyboard_Light_Atlas_1: 1857466921
-      GFrame_Keyboard_Light_Atlas_2: -246699483
-      GFrame_Keyboard_Light_Atlas_3: 1613098571
-      GFrame_Keyboard_Light_Atlas_4: 1950538371
-      GFrame_Keyboard_Light_Atlas_5: -584544756
-      GFrame_Keyboard_Light_Atlas_6: -631883923
-      GFrame_Keyboard_Light_Atlas_7: 686156680
-      GFrame_Keyboard_Light_Atlas_8: -1512609811
-      GFrame_Keyboard_Light_Atlas_9: 473967570
-      GFrame_Keyboard_Light_Atlas_A: -735126852
-      GFrame_Keyboard_Light_Atlas_Alt: -2019516250
-      GFrame_Keyboard_Light_Atlas_Arrow_Down: 347400862
-      GFrame_Keyboard_Light_Atlas_Arrow_Left: -891336784
-      GFrame_Keyboard_Light_Atlas_Arrow_Right: -1520800768
-      GFrame_Keyboard_Light_Atlas_Arrow_Up: 592800433
-      GFrame_Keyboard_Light_Atlas_Asterisk: -1978299966
-      GFrame_Keyboard_Light_Atlas_B: -1197990170
-      GFrame_Keyboard_Light_Atlas_Backspace: 971673446
-      GFrame_Keyboard_Light_Atlas_Backspace_Alt: 773333737
-      GFrame_Keyboard_Light_Atlas_Bracket_Left: -834305151
-      GFrame_Keyboard_Light_Atlas_Bracket_Right: -1089326551
-      GFrame_Keyboard_Light_Atlas_C: 1773539183
-      GFrame_Keyboard_Light_Atlas_Caps_Lock: -1404093851
-      GFrame_Keyboard_Light_Atlas_Command: 1228357778
-      GFrame_Keyboard_Light_Atlas_Ctrl: 808323493
-      GFrame_Keyboard_Light_Atlas_D: -1420685651
-      GFrame_Keyboard_Light_Atlas_Del: -414036825
-      GFrame_Keyboard_Light_Atlas_E: -1644860012
-      GFrame_Keyboard_Light_Atlas_End: 1262003929
-      GFrame_Keyboard_Light_Atlas_Enter: 1479250916
-      GFrame_Keyboard_Light_Atlas_Enter_Alt: -341288425
-      GFrame_Keyboard_Light_Atlas_Enter_Tall: 457435914
-      GFrame_Keyboard_Light_Atlas_Esc: -1887132108
-      GFrame_Keyboard_Light_Atlas_F: 1528944154
-      GFrame_Keyboard_Light_Atlas_F1: 1951825789
-      GFrame_Keyboard_Light_Atlas_F10: -1364207194
-      GFrame_Keyboard_Light_Atlas_F11: -350974352
-      GFrame_Keyboard_Light_Atlas_F12: -797443822
-      GFrame_Keyboard_Light_Atlas_F2: 842168698
-      GFrame_Keyboard_Light_Atlas_F3: -686369197
-      GFrame_Keyboard_Light_Atlas_F4: 235033320
-      GFrame_Keyboard_Light_Atlas_F5: -1595039985
-      GFrame_Keyboard_Light_Atlas_F6: -1807642359
-      GFrame_Keyboard_Light_Atlas_F7: 1097759118
-      GFrame_Keyboard_Light_Atlas_F8: 1754080122
-      GFrame_Keyboard_Light_Atlas_F9: 1114641745
-      GFrame_Keyboard_Light_Atlas_G: 930207176
-      GFrame_Keyboard_Light_Atlas_H: 965796046
-      GFrame_Keyboard_Light_Atlas_Home: -1270158509
-      GFrame_Keyboard_Light_Atlas_I: 532199401
-      GFrame_Keyboard_Light_Atlas_Insert: 1550858947
-      GFrame_Keyboard_Light_Atlas_J: -1034283920
-      GFrame_Keyboard_Light_Atlas_K: -1477445862
-      GFrame_Keyboard_Light_Atlas_L: 552431555
-      GFrame_Keyboard_Light_Atlas_M: 1329222781
-      GFrame_Keyboard_Light_Atlas_Mark_Left: -517687411
-      GFrame_Keyboard_Light_Atlas_Mark_Right: -1948308333
-      GFrame_Keyboard_Light_Atlas_Minus: -1490720550
-      GFrame_Keyboard_Light_Atlas_Mouse_Left: 110972389
-      GFrame_Keyboard_Light_Atlas_Mouse_Middle: 343421714
-      GFrame_Keyboard_Light_Atlas_Mouse_Right: 461273196
-      GFrame_Keyboard_Light_Atlas_Mouse_Simple: 1963392076
-      GFrame_Keyboard_Light_Atlas_N: -327708332
-      GFrame_Keyboard_Light_Atlas_Num_Lock: -2129787889
-      GFrame_Keyboard_Light_Atlas_O: 872548941
-      GFrame_Keyboard_Light_Atlas_P: 1682100031
-      GFrame_Keyboard_Light_Atlas_Page_Down: 9095018
-      GFrame_Keyboard_Light_Atlas_Page_Up: -1060215814
-      GFrame_Keyboard_Light_Atlas_Plus: 542246975
-      GFrame_Keyboard_Light_Atlas_Plus_Tall: 188569364
-      GFrame_Keyboard_Light_Atlas_Print_Screen: -568426028
-      GFrame_Keyboard_Light_Atlas_Q: 1556223893
-      GFrame_Keyboard_Light_Atlas_Question: -2095559893
-      GFrame_Keyboard_Light_Atlas_Quote: 1406677418
-      GFrame_Keyboard_Light_Atlas_R: 1968486790
-      GFrame_Keyboard_Light_Atlas_S: -782648151
-      GFrame_Keyboard_Light_Atlas_Semicolon: -37129994
-      GFrame_Keyboard_Light_Atlas_Shift: -603568901
-      GFrame_Keyboard_Light_Atlas_Shift_Alt: -1114744805
-      GFrame_Keyboard_Light_Atlas_Slash: -558453540
-      GFrame_Keyboard_Light_Atlas_Space: -1414644480
-      GFrame_Keyboard_Light_Atlas_T: 1634392624
-      GFrame_Keyboard_Light_Atlas_Tab: -559641221
-      GFrame_Keyboard_Light_Atlas_Tilda: -1381409475
-      GFrame_Keyboard_Light_Atlas_U: -407130766
-      GFrame_Keyboard_Light_Atlas_V: 1411443937
-      GFrame_Keyboard_Light_Atlas_W: -187395436
-      GFrame_Keyboard_Light_Atlas_Win: 1980801123
-      GFrame_Keyboard_Light_Atlas_X: 1327776457
-      GFrame_Keyboard_Light_Atlas_Y: 989933391
-      GFrame_Keyboard_Light_Atlas_Z: 1908061522
+      WiseInput_Keyboard_Light_Atlas_0: 1194751676
+      WiseInput_Keyboard_Light_Atlas_1: 1857466921
+      WiseInput_Keyboard_Light_Atlas_2: -246699483
+      WiseInput_Keyboard_Light_Atlas_3: 1613098571
+      WiseInput_Keyboard_Light_Atlas_4: 1950538371
+      WiseInput_Keyboard_Light_Atlas_5: -584544756
+      WiseInput_Keyboard_Light_Atlas_6: -631883923
+      WiseInput_Keyboard_Light_Atlas_7: 686156680
+      WiseInput_Keyboard_Light_Atlas_8: -1512609811
+      WiseInput_Keyboard_Light_Atlas_9: 473967570
+      WiseInput_Keyboard_Light_Atlas_A: -735126852
+      WiseInput_Keyboard_Light_Atlas_Alt: -2019516250
+      WiseInput_Keyboard_Light_Atlas_Arrow_Down: 347400862
+      WiseInput_Keyboard_Light_Atlas_Arrow_Left: -891336784
+      WiseInput_Keyboard_Light_Atlas_Arrow_Right: -1520800768
+      WiseInput_Keyboard_Light_Atlas_Arrow_Up: 592800433
+      WiseInput_Keyboard_Light_Atlas_Asterisk: -1978299966
+      WiseInput_Keyboard_Light_Atlas_B: -1197990170
+      WiseInput_Keyboard_Light_Atlas_Backspace: 971673446
+      WiseInput_Keyboard_Light_Atlas_Backspace_Alt: 773333737
+      WiseInput_Keyboard_Light_Atlas_Bracket_Left: -834305151
+      WiseInput_Keyboard_Light_Atlas_Bracket_Right: -1089326551
+      WiseInput_Keyboard_Light_Atlas_C: 1773539183
+      WiseInput_Keyboard_Light_Atlas_Caps_Lock: -1404093851
+      WiseInput_Keyboard_Light_Atlas_Command: 1228357778
+      WiseInput_Keyboard_Light_Atlas_Ctrl: 808323493
+      WiseInput_Keyboard_Light_Atlas_D: -1420685651
+      WiseInput_Keyboard_Light_Atlas_Del: -414036825
+      WiseInput_Keyboard_Light_Atlas_E: -1644860012
+      WiseInput_Keyboard_Light_Atlas_End: 1262003929
+      WiseInput_Keyboard_Light_Atlas_Enter: 1479250916
+      WiseInput_Keyboard_Light_Atlas_Enter_Alt: -341288425
+      WiseInput_Keyboard_Light_Atlas_Enter_Tall: 457435914
+      WiseInput_Keyboard_Light_Atlas_Esc: -1887132108
+      WiseInput_Keyboard_Light_Atlas_F: 1528944154
+      WiseInput_Keyboard_Light_Atlas_F1: 1951825789
+      WiseInput_Keyboard_Light_Atlas_F10: -1364207194
+      WiseInput_Keyboard_Light_Atlas_F11: -350974352
+      WiseInput_Keyboard_Light_Atlas_F12: -797443822
+      WiseInput_Keyboard_Light_Atlas_F2: 842168698
+      WiseInput_Keyboard_Light_Atlas_F3: -686369197
+      WiseInput_Keyboard_Light_Atlas_F4: 235033320
+      WiseInput_Keyboard_Light_Atlas_F5: -1595039985
+      WiseInput_Keyboard_Light_Atlas_F6: -1807642359
+      WiseInput_Keyboard_Light_Atlas_F7: 1097759118
+      WiseInput_Keyboard_Light_Atlas_F8: 1754080122
+      WiseInput_Keyboard_Light_Atlas_F9: 1114641745
+      WiseInput_Keyboard_Light_Atlas_G: 930207176
+      WiseInput_Keyboard_Light_Atlas_H: 965796046
+      WiseInput_Keyboard_Light_Atlas_Home: -1270158509
+      WiseInput_Keyboard_Light_Atlas_I: 532199401
+      WiseInput_Keyboard_Light_Atlas_Insert: 1550858947
+      WiseInput_Keyboard_Light_Atlas_J: -1034283920
+      WiseInput_Keyboard_Light_Atlas_K: -1477445862
+      WiseInput_Keyboard_Light_Atlas_L: 552431555
+      WiseInput_Keyboard_Light_Atlas_M: 1329222781
+      WiseInput_Keyboard_Light_Atlas_Mark_Left: -517687411
+      WiseInput_Keyboard_Light_Atlas_Mark_Right: -1948308333
+      WiseInput_Keyboard_Light_Atlas_Minus: -1490720550
+      WiseInput_Keyboard_Light_Atlas_Mouse_Left: 110972389
+      WiseInput_Keyboard_Light_Atlas_Mouse_Middle: 343421714
+      WiseInput_Keyboard_Light_Atlas_Mouse_Right: 461273196
+      WiseInput_Keyboard_Light_Atlas_Mouse_Simple: 1963392076
+      WiseInput_Keyboard_Light_Atlas_N: -327708332
+      WiseInput_Keyboard_Light_Atlas_Num_Lock: -2129787889
+      WiseInput_Keyboard_Light_Atlas_O: 872548941
+      WiseInput_Keyboard_Light_Atlas_P: 1682100031
+      WiseInput_Keyboard_Light_Atlas_Page_Down: 9095018
+      WiseInput_Keyboard_Light_Atlas_Page_Up: -1060215814
+      WiseInput_Keyboard_Light_Atlas_Plus: 542246975
+      WiseInput_Keyboard_Light_Atlas_Plus_Tall: 188569364
+      WiseInput_Keyboard_Light_Atlas_Print_Screen: -568426028
+      WiseInput_Keyboard_Light_Atlas_Q: 1556223893
+      WiseInput_Keyboard_Light_Atlas_Question: -2095559893
+      WiseInput_Keyboard_Light_Atlas_Quote: 1406677418
+      WiseInput_Keyboard_Light_Atlas_R: 1968486790
+      WiseInput_Keyboard_Light_Atlas_S: -782648151
+      WiseInput_Keyboard_Light_Atlas_Semicolon: -37129994
+      WiseInput_Keyboard_Light_Atlas_Shift: -603568901
+      WiseInput_Keyboard_Light_Atlas_Shift_Alt: -1114744805
+      WiseInput_Keyboard_Light_Atlas_Slash: -558453540
+      WiseInput_Keyboard_Light_Atlas_Space: -1414644480
+      WiseInput_Keyboard_Light_Atlas_T: 1634392624
+      WiseInput_Keyboard_Light_Atlas_Tab: -559641221
+      WiseInput_Keyboard_Light_Atlas_Tilda: -1381409475
+      WiseInput_Keyboard_Light_Atlas_U: -407130766
+      WiseInput_Keyboard_Light_Atlas_V: 1411443937
+      WiseInput_Keyboard_Light_Atlas_W: -187395436
+      WiseInput_Keyboard_Light_Atlas_Win: 1980801123
+      WiseInput_Keyboard_Light_Atlas_X: 1327776457
+      WiseInput_Keyboard_Light_Atlas_Y: 989933391
+      WiseInput_Keyboard_Light_Atlas_Z: 1908061522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
