@@ -2850,8 +2850,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -4244,8 +4244,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -6153,8 +6153,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogger,
-            DevLocker.GFrame.SampleGame
+          m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogger,
+            DevLocker.WiseInput.Sample
           m_MethodName: OnButtonClicked
           m_Mode: 1
           m_Arguments:
@@ -6529,8 +6529,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 436319428}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.Input.UIInputDisplay.HotkeyRebindUI,
-          DevLocker.GFrame.Input
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.UIInputDisplay.HotkeyRebindUI,
+          DevLocker.WiseInput
         m_MethodName: StartRebind
         m_Mode: 1
         m_Arguments:
@@ -7194,8 +7194,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -8265,8 +8265,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -14802,7 +14802,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Selection plays important role in UIs that support controllers. GFrame
+  m_text: 'Selection plays important role in UIs that support controllers. WiseInput
     hotkeys can adapt to the current selection using the ActivateUIScopeOnSelection
     component.
 
@@ -17821,8 +17821,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 436319428}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.Input.UIInputDisplay.HotkeyRebindUI,
-          DevLocker.GFrame.Input
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.UIInputDisplay.HotkeyRebindUI,
+          DevLocker.WiseInput
         m_MethodName: ResetBind
         m_Mode: 1
         m_Arguments:
@@ -19259,8 +19259,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -19275,8 +19275,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -19303,8 +19303,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -19319,8 +19319,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -19335,8 +19335,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -19351,8 +19351,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -24212,8 +24212,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981790164}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterWikiController,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterWikiController,
+          DevLocker.WiseInput.Sample
         m_MethodName: OnTabOpened
         m_Mode: 0
         m_Arguments:
@@ -26641,8 +26641,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -27930,8 +27930,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -29717,7 +29717,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 760973060}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterBindingsController,
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterBindingsController,
           DevLocker.GFrame
         m_MethodName: LoadBindings
         m_Mode: 1
@@ -31873,7 +31873,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 760973060}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterBindingsController,
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterBindingsController,
           DevLocker.GFrame
         m_MethodName: SaveBindings
         m_Mode: 1
@@ -33021,8 +33021,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1701860702}
-          m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogger,
-            DevLocker.GFrame.SampleGame
+          m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogger,
+            DevLocker.WiseInput.Sample
           m_MethodName: OnButtonClicked
           m_Mode: 1
           m_Arguments:
@@ -36800,8 +36800,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -36816,8 +36816,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -36835,8 +36835,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -36851,8 +36851,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
@@ -40046,8 +40046,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 829179349}
-        m_TargetAssemblyTypeName: DevLocker.GFrame.SampleGame.UITester.SampleUITesterButtonLogDisplay,
-          DevLocker.GFrame.SampleGame
+        m_TargetAssemblyTypeName: DevLocker.WiseInput.Sample.SampleUITesterButtonLogDisplay,
+          DevLocker.WiseInput.Sample
         m_MethodName: LogText
         m_Mode: 5
         m_Arguments:
