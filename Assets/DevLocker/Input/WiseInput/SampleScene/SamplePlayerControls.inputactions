@@ -821,6 +821,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "TestSystemDialogHotkey",
+                    "type": "Button",
+                    "id": "4a39cd8a-f83a-4590-9766-db1b04947fe4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1307,6 +1316,28 @@
                     "action": "TestVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "49d830ed-75b0-4cc4-aaca-ca1e09072ab1",
+                    "path": "<Keyboard>/f5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "TestSystemDialogHotkey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1baf447-8164-4f7e-af4d-6306c82fffb7",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "TestSystemDialogHotkey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

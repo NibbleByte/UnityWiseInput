@@ -55,20 +55,20 @@ namespace DevLocker.WiseInput.Sample
 
 				playerInput.uiInputModule = uiInputModule;
 
-				var inputContext = new InputComponentContext(playerInput, new InputActionsMaskedStack(PlayerControls), IInputContext.InputBehaviours.Default, BindingDisplayAssets);
-				PlayerControls.SetInputContext(inputContext);
+				InputContext = new InputComponentContext(playerInput, new InputActionsMaskedStack(PlayerControls), IInputContext.InputBehaviours.Default, BindingDisplayAssets);
+				PlayerControls.SetInputContext(InputContext);
 
-				InputUIRootObject.GlobalUIRoot.SetupGlobal(uiInputModule.GetComponent<EventSystem>(), inputContext);
+				InputUIRootObject.GlobalUIRoot.SetupGlobal(uiInputModule.GetComponent<EventSystem>(), InputContext);
 
 			} else {
 
 				var uiInputModule = gameInputObject.GetComponentInChildren<InputSystemUIInputModule>();
 				uiInputModule.actionsAsset = PlayerControls.asset;  // This will refresh the UI Input action references to the new asset.
 
-				var inputContext = new InputCollectionContext(PlayerControls, PlayerControls.Sample_UI.Get(), IInputContext.InputBehaviours.Default, BindingDisplayAssets);
-				PlayerControls.SetInputContext(inputContext);
+				InputContext = new InputCollectionContext(PlayerControls, PlayerControls.Sample_UI.Get(), IInputContext.InputBehaviours.Default, BindingDisplayAssets);
+				PlayerControls.SetInputContext(InputContext);
 
-				InputUIRootObject.GlobalUIRoot.SetupGlobal(uiInputModule.GetComponent<EventSystem>(), inputContext);
+				InputUIRootObject.GlobalUIRoot.SetupGlobal(uiInputModule.GetComponent<EventSystem>(), InputContext);
 			}
 
 			// The whole level is UI, so enable it for the whole level.

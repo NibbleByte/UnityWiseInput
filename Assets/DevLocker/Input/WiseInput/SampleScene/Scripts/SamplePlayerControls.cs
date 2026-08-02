@@ -909,6 +909,15 @@ namespace DevLocker.WiseInput.Sample
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""TestSystemDialogHotkey"",
+                    ""type"": ""Button"",
+                    ""id"": ""4a39cd8a-f83a-4590-9766-db1b04947fe4"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1395,6 +1404,28 @@ namespace DevLocker.WiseInput.Sample
                     ""action"": ""TestVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""49d830ed-75b0-4cc4-aaca-ca1e09072ab1"",
+                    ""path"": ""<Keyboard>/f5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""TestSystemDialogHotkey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c1baf447-8164-4f7e-af4d-6306c82fffb7"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""TestSystemDialogHotkey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1475,6 +1506,7 @@ namespace DevLocker.WiseInput.Sample
             m_Sample_UITester_TestTriggerLeft = m_Sample_UITester.FindAction("TestTriggerLeft", throwIfNotFound: true);
             m_Sample_UITester_TestAxis = m_Sample_UITester.FindAction("TestAxis", throwIfNotFound: true);
             m_Sample_UITester_TestVector2 = m_Sample_UITester.FindAction("TestVector2", throwIfNotFound: true);
+            m_Sample_UITester_TestSystemDialogHotkey = m_Sample_UITester.FindAction("TestSystemDialogHotkey", throwIfNotFound: true);
         }
 
         ~@SamplePlayerControls()
@@ -1936,6 +1968,7 @@ namespace DevLocker.WiseInput.Sample
         private readonly InputAction m_Sample_UITester_TestTriggerLeft;
         private readonly InputAction m_Sample_UITester_TestAxis;
         private readonly InputAction m_Sample_UITester_TestVector2;
+        private readonly InputAction m_Sample_UITester_TestSystemDialogHotkey;
         /// <summary>
         /// Provides access to input actions defined in input action map "Sample_UITester".
         /// </summary>
@@ -1991,6 +2024,10 @@ namespace DevLocker.WiseInput.Sample
             /// Provides access to the underlying input action "Sample_UITester/TestVector2".
             /// </summary>
             public InputAction @TestVector2 => m_Wrapper.m_Sample_UITester_TestVector2;
+            /// <summary>
+            /// Provides access to the underlying input action "Sample_UITester/TestSystemDialogHotkey".
+            /// </summary>
+            public InputAction @TestSystemDialogHotkey => m_Wrapper.m_Sample_UITester_TestSystemDialogHotkey;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -2050,6 +2087,9 @@ namespace DevLocker.WiseInput.Sample
                 @TestVector2.started += instance.OnTestVector2;
                 @TestVector2.performed += instance.OnTestVector2;
                 @TestVector2.canceled += instance.OnTestVector2;
+                @TestSystemDialogHotkey.started += instance.OnTestSystemDialogHotkey;
+                @TestSystemDialogHotkey.performed += instance.OnTestSystemDialogHotkey;
+                @TestSystemDialogHotkey.canceled += instance.OnTestSystemDialogHotkey;
             }
 
             /// <summary>
@@ -2094,6 +2134,9 @@ namespace DevLocker.WiseInput.Sample
                 @TestVector2.started -= instance.OnTestVector2;
                 @TestVector2.performed -= instance.OnTestVector2;
                 @TestVector2.canceled -= instance.OnTestVector2;
+                @TestSystemDialogHotkey.started -= instance.OnTestSystemDialogHotkey;
+                @TestSystemDialogHotkey.performed -= instance.OnTestSystemDialogHotkey;
+                @TestSystemDialogHotkey.canceled -= instance.OnTestSystemDialogHotkey;
             }
 
             /// <summary>
@@ -2392,6 +2435,13 @@ namespace DevLocker.WiseInput.Sample
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnTestVector2(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "TestSystemDialogHotkey" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnTestSystemDialogHotkey(InputAction.CallbackContext context);
         }
     }
 }
