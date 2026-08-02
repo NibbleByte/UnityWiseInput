@@ -10,7 +10,7 @@ namespace DevLocker.WiseInput.Sample
 	{
 		public void SaveBindings()
 		{
-			var rebinds = SampleSceneController.Instance.PlayerInput.actions.SaveBindingOverridesAsJson();
+			var rebinds = SampleSceneController.Instance.PlayerControls.SaveBindingOverridesAsJson();
 			PlayerPrefs.SetString("sample-game-rebinds", rebinds);
 
 			Debug.Log($"Rebinds saved:\n{rebinds}");
@@ -20,7 +20,7 @@ namespace DevLocker.WiseInput.Sample
 		{
 			var rebinds = PlayerPrefs.GetString("sample-game-rebinds");
 			if (!string.IsNullOrEmpty(rebinds)) {
-				SampleSceneController.Instance.PlayerInput.actions.LoadBindingOverridesFromJson(rebinds);
+				SampleSceneController.Instance.PlayerControls.LoadBindingOverridesFromJson(rebinds);
 				SampleSceneController.Instance.InputContext.TriggerLastUsedDeviceChanged();
 			}
 
