@@ -193,9 +193,9 @@ namespace DevLocker.WiseInput.UIScope
 
 		protected virtual void Reset()
 		{
-			var selectionController = GetComponent<SelectionController>();
+			var selectionController = GetComponent<SelectionControllerScopeElement>();
 			if (selectionController && (selectionController.StartSelections?.Count ?? 0) == 0 && (selectionController.StartNavigationGroups?.Count ?? 0) == 0) {
-				selectionController.StartSelectionSource = SelectionController.StartSelectionSourceTypes.NavigationGroups;
+				selectionController.StartSelectionSource = SelectionControllerScopeElement.StartSelectionSourceTypes.NavigationGroups;
 				selectionController.StartNavigationGroups = new List<UINavigationGroup>();
 				selectionController.StartNavigationGroups.Add(this);
 

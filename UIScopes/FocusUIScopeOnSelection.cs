@@ -39,7 +39,7 @@ namespace DevLocker.WiseInput.UIScope
 				return;
 
 			// Don't steal selection controller selection opportunity.
-			SelectionController activeSelectionController = SelectionController.GetActiveInstanceFor(m_InputUIRoot.GetRootObject());
+			SelectionControllerScopeElement activeSelectionController = SelectionControllerScopeElement.GetActiveInstanceFor(m_InputUIRoot.GetRootObject());
 			if (activeSelectionController && activeSelectionController.IsSelectRequested)
 				return;
 

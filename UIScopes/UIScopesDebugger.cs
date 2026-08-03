@@ -77,7 +77,7 @@ namespace DevLocker.WiseInput.UIScope
 			FocusButtonContent = EditorGUIUtility.IconContent("Animation.FilterBySelection");
 			EventSystemButtonContent = EditorGUIUtility.IconContent("EventSystem Icon");
 
-			SelectionControllerButtonContent = AssetDatabase.FindAssets($"t:Script {nameof(SelectionController)}")
+			SelectionControllerButtonContent = AssetDatabase.FindAssets($"t:Script {nameof(SelectionControllerScopeElement)}")
 				.Select(AssetDatabase.GUIDToAssetPath)
 				.Select(AssetDatabase.GetCachedIcon)
 				.Select(t => new GUIContent(t))
@@ -153,10 +153,10 @@ namespace DevLocker.WiseInput.UIScope
 
 				if (GUILayout.Button(SelectionControllerButtonContent, EditorStyles.label, GUILayout.Width(16), GUILayout.Height(EditorGUIUtility.singleLineHeight))) {
 					if (Application.isPlaying) {
-						Selection.activeObject = SelectionController.GetActiveInstanceFor(InputUIRootObject.GlobalUIRoot);
+						Selection.activeObject = SelectionControllerScopeElement.GetActiveInstanceFor(InputUIRootObject.GlobalUIRoot);
 					} else {
 #if UNITY_2023_2_OR_NEWER
-						Selection.activeObject = GameObject.FindAnyObjectByType<SelectionController>(FindObjectsInactive.Include);
+						Selection.activeObject = GameObject.FindAnyObjectByType<SelectionControllerScopeElement>(FindObjectsInactive.Include);
 #else
 						Selection.activeObject = GameObject.FindObjectOfType<SelectionController>(true);
 #endif

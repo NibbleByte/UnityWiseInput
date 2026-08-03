@@ -12,7 +12,7 @@ namespace DevLocker.WiseInput.UIScope
 	/// <summary>
 	/// When this component is enabled, it will set this object as selected in the Unity event system.
 	/// </summary>
-	public class SelectionController : MonoBehaviour, IScopeElement
+	public class SelectionControllerScopeElement : MonoBehaviour, IScopeElement
 	{
 		public enum PersistSelectionActionType
 		{
@@ -68,7 +68,7 @@ namespace DevLocker.WiseInput.UIScope
 		private bool m_ControlSchemeMatched = true;
 
 		// Only one should be active per context. It's a list to avoid issues while changing active scopes.
-		private static Dictionary<InputUIRootObject, List<SelectionController>> s_ActiveInstances = new Dictionary<InputUIRootObject, List<SelectionController>>();
+		private static Dictionary<InputUIRootObject, List<SelectionControllerScopeElement>> s_ActiveInstances = new Dictionary<InputUIRootObject, List<SelectionControllerScopeElement>>();
 
 		private List<CanvasGroup> m_CanvasGroups = new List<CanvasGroup>();
 
@@ -156,9 +156,9 @@ namespace DevLocker.WiseInput.UIScope
 		/// <summary>
 		/// Get the active instance for the specified player context (i.e. singleton).
 		/// </summary>
-		public static SelectionController GetActiveInstanceFor(InputUIRootObject inputUIRoot)
+		public static SelectionControllerScopeElement GetActiveInstanceFor(InputUIRootObject inputUIRoot)
 		{
-			s_ActiveInstances.TryGetValue(inputUIRoot, out List<SelectionController> instance);
+			s_ActiveInstances.TryGetValue(inputUIRoot, out List<SelectionControllerScopeElement> instance);
 
 			return instance?.FirstOrDefault();
 		}
@@ -210,9 +210,9 @@ namespace DevLocker.WiseInput.UIScope
 
 			m_SelectedObjectOnEnable = m_InputUIRoot.SelectedGameObject;
 
-			s_ActiveInstances.TryGetValue(m_InputUIRoot.GetRootObject(), out List<SelectionController> activeInstances);
+			s_ActiveInstances.TryGetValue(m_InputUIRoot.GetRootObject(), out List<SelectionControllerScopeElement> activeInstances);
 			if (activeInstances == null) {
-				activeInstances = new List<SelectionController>(2);
+				activeInstances = new List<SelectionControllerScopeElement>(2);
 				s_ActiveInstances.Add(m_InputUIRoot.GetRootObject(), activeInstances);
 			}
 			activeInstances.Add(this);
@@ -225,7 +225,7 @@ namespace DevLocker.WiseInput.UIScope
 			if (!m_HasInitialized)
 				return;
 
-			s_ActiveInstances.TryGetValue(m_InputUIRoot.GetRootObject(), out List<SelectionController> activeInstances);
+			s_ActiveInstances.TryGetValue(m_InputUIRoot.GetRootObject(), out List<SelectionControllerScopeElement> activeInstances);
 			if (activeInstances != null && activeInstances.Contains(this)) {
 				activeInstances.Remove(this);
 				if (activeInstances.Count == 0) {
@@ -294,9 +294,9 @@ namespace DevLocker.WiseInput.UIScope
 					return;
 
 				// Call this on update, to avoid errors while switching active object (turn on one, turn off another). In the end, only one should be active.
-				s_ActiveInstances.TryGetValue(m_InputUIRoot.GetRootObject(), out List<SelectionController> activeInstances);
+				s_ActiveInstances.TryGetValue(m_InputUIRoot.GetRootObject(), out List<SelectionControllerScopeElement> activeInstances);
 				if (activeInstances == null || activeInstances.Count != 1 || !activeInstances.Contains(this)) {
-					Debug.LogError($"[Input] There are two or more {nameof(SelectionController)} instances active at the same time - this is not allowed. Currently active: {string.Join(", ", activeInstances?.Select(s => s.name) ?? Array.Empty<string>())}. Selection requested for: \"{name}\"", this);
+					Debug.LogError($"[Input] There are two or more {nameof(SelectionControllerScopeElement)} instances active at the same time - this is not allowed. Currently active: {string.Join(", ", activeInstances?.Select(s => s.name) ?? Array.Empty<string>())}. Selection requested for: \"{name}\"", this);
 				}
 
 				// Hotkeys subscribe for the InputAction.perform event, which executes on key press / down,
@@ -321,7 +321,7 @@ namespace DevLocker.WiseInput.UIScope
 					;
 
 				if (targetSelection && !targetSelection.activeInHierarchy) {
-					Debug.LogWarning($"[Input] {name} {nameof(SelectionController)} is trying to select inactive object!", this);
+					Debug.LogWarning($"[Input] {name} {nameof(SelectionControllerScopeElement)} is trying to select inactive object!", this);
 				}
 
 				if (m_ControlSchemeMatched) {
@@ -458,7 +458,7 @@ namespace DevLocker.WiseInput.UIScope
 						// Having no start selection is valid if selectables will be created dynamically.
 						foreach (Selectable selectable in StartSelections) {
 							if (selectable == null) {
-								Debug.LogError($"[Input] {name} {nameof(SelectionController)} has missing start selection.", this);
+								Debug.LogError($"[Input] {name} {nameof(SelectionControllerScopeElement)} has missing start selection.", this);
 							}
 						}
 					}
@@ -469,7 +469,7 @@ namespace DevLocker.WiseInput.UIScope
 						// Having no start selection is valid if selectables will be created dynamically.
 						foreach (UINavigationGroup navGroup in StartNavigationGroups) {
 							if (navGroup == null) {
-								Debug.LogError($"[Input] {name} {nameof(SelectionController)} has missing start selection.", this);
+								Debug.LogError($"[Input] {name} {nameof(SelectionControllerScopeElement)} has missing start selection.", this);
 							}
 						}
 					}
@@ -481,7 +481,7 @@ namespace DevLocker.WiseInput.UIScope
 
 
 #if UNITY_EDITOR
-	[UnityEditor.CustomEditor(typeof(SelectionController), true)]
+	[UnityEditor.CustomEditor(typeof(SelectionControllerScopeElement), true)]
 	[UnityEditor.CanEditMultipleObjects]
 	internal class SelectionControllerEditor : UnityEditor.Editor
 	{
@@ -494,26 +494,26 @@ namespace DevLocker.WiseInput.UIScope
 			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty("m_Script"));
 			UnityEditor.EditorGUI.EndDisabledGroup();
 
-			var startSelectionSource = serializedObject.FindProperty(nameof(SelectionController.StartSelectionSource));
+			var startSelectionSource = serializedObject.FindProperty(nameof(SelectionControllerScopeElement.StartSelectionSource));
 			UnityEditor.EditorGUILayout.PropertyField(startSelectionSource);
 
-			var sourceType = (SelectionController.StartSelectionSourceTypes) startSelectionSource.intValue;
+			var sourceType = (SelectionControllerScopeElement.StartSelectionSourceTypes) startSelectionSource.intValue;
 
 			switch(sourceType) {
-				case SelectionController.StartSelectionSourceTypes.Selectables:
-					UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(SelectionController.StartSelections)));
+				case SelectionControllerScopeElement.StartSelectionSourceTypes.Selectables:
+					UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(SelectionControllerScopeElement.StartSelections)));
 					break;
-				case SelectionController.StartSelectionSourceTypes.NavigationGroups:
-					UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(SelectionController.StartNavigationGroups)));
+				case SelectionControllerScopeElement.StartSelectionSourceTypes.NavigationGroups:
+					UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(SelectionControllerScopeElement.StartNavigationGroups)));
 					break;
 				default:
 					Debug.LogError($"Unknown type {sourceType}", target);
 					break;
 			}
 
-			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(SelectionController.PersistentSelection)));
+			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(SelectionControllerScopeElement.PersistentSelection)));
 
-			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(SelectionController.ExtraSettings)));
+			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(SelectionControllerScopeElement.ExtraSettings)));
 
 			serializedObject.ApplyModifiedProperties();
 		}
