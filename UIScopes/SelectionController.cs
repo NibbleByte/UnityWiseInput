@@ -12,7 +12,7 @@ namespace DevLocker.WiseInput.UIScope
 	/// <summary>
 	/// When this component is enabled, it will set this object as selected in the Unity event system.
 	/// </summary>
-	public class SelectionController : MonoBehaviour
+	public class SelectionController : MonoBehaviour, IScopeElement
 	{
 		public enum PersistSelectionActionType
 		{
