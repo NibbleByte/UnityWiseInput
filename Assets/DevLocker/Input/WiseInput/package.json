@@ -17,7 +17,7 @@
         {
           "displayName": "UI Scopes Usage",
           "description": "Sample scene with assets to showcase UI hotkeys, scopes and proper input handling.",
-          "path": "SampleScene~"
+          "path": "SampleUsage/SampleScene"
         }
     ]
 }
