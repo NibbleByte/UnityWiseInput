@@ -50,7 +50,8 @@ namespace DevLocker.WiseInput
 			if (GUI.Button(position, m_PickerButtonContent, m_PickerButtonStyle)) {
 				var assets = AssetDatabase.FindAssets($"t:{typeof(InputActionAsset).Name}")
 					.Select(AssetDatabase.GUIDToAssetPath)
-					.Where(path => !path.StartsWith("Packages/com.unity.inputsystem", StringComparison.OrdinalIgnoreCase))
+					//.Where(path => !path.StartsWith("Packages/com.unity.inputsystem", StringComparison.OrdinalIgnoreCase))
+					.Where(path => !path.StartsWith("Packages", StringComparison.OrdinalIgnoreCase))
 					.Select(AssetDatabase.LoadAssetAtPath<InputActionAsset>)
 					.ToList()
 					;
