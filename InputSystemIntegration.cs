@@ -331,11 +331,6 @@ namespace DevLocker.WiseInput
 		public IEnumerable<object> GetEnablingSourcesFor(InputAction action);
 
 		/// <summary>
-		/// Is the specified action enabled by the provided source.
-		/// </summary>
-		public bool IsEnabledBy(object source, InputAction action);
-
-		/// <summary>
 		/// Push actions mask filtering in actions allowed to be enabled in the <see cref="InputActionsMaskedStack"/>.
 		/// If mask is added or set to the top of the stack it will be applied immediately disabling any actions not included.
 		/// Masks not on the top of the stack don't affect the actions state.
@@ -501,6 +496,20 @@ namespace DevLocker.WiseInput
 		public static InputAction FindActionFor(this IInputContext context, InputActionReference inputActionReference, bool throwIfNotFound = false)
 		{
 			return context.FindActionFor(inputActionReference.action.id, throwIfNotFound);
+		}
+
+		/// <summary>
+		/// Is the specified action enabled by the provided source.
+		/// </summary>
+		public static bool IsEnabledBy(this IInputContext context, object source, InputAction action)
+		{
+			if (source == null)
+				throw new ArgumentNullException();
+
+			if (source is InputAction)
+				throw new ArgumentException("Requests with source type InputAction is not allowed.");
+
+			return context.GetEnablingSourcesFor(action).Contains(source);
 		}
 
 		/// <summary>
