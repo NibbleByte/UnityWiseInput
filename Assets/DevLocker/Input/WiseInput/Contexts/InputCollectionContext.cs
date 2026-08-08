@@ -163,11 +163,6 @@ namespace DevLocker.WiseInput.Contexts
 			return InputActionsCollection.FindAction(id.ToString(), throwIfNotFound);
 		}
 
-		public IEnumerable<InputAction> FindActionsForAllPlayers(string actionNameOrId, bool throwIfNotFound = false)
-		{
-			yield return InputActionsCollection.FindAction(actionNameOrId, throwIfNotFound);
-		}
-
 		public void EnableAction(object source, InputAction action)
 		{
 			InputActionsMaskedStack.Enable(source, action);
@@ -191,11 +186,6 @@ namespace DevLocker.WiseInput.Contexts
 		public IEnumerable<object> GetEnablingSourcesFor(InputAction action)
 		{
 			return InputActionsMaskedStack.GetEnablingSourcesFor(action);
-		}
-
-		public bool IsEnabledBy(object source, InputAction action)
-		{
-			return InputActionsMaskedStack.IsEnabledBy(source, action);
 		}
 
 		public void PushOrSetActionsMask(object source, IEnumerable<InputAction> actionsMask, bool setBackToTop = false)

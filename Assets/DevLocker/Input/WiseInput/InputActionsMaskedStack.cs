@@ -192,24 +192,6 @@ namespace DevLocker.WiseInput
 		}
 
 		/// <summary>
-		/// Is the specified action enabled by the provided source.
-		/// </summary>
-		public bool IsEnabledBy(object source, InputAction action)
-		{
-			if (source == null)
-				throw new ArgumentNullException();
-
-			if (source is InputAction)
-				throw new ArgumentException("Requests with source type InputAction is not allowed.");
-
-			if (m_Actions.TryGetValue(action, out HashSet<object> enablingSources))
-				return enablingSources.Contains(source);
-
-			return false;
-
-		}
-
-		/// <summary>
 		/// Push actions mask filtering in actions allowed to be enabled.
 		/// If mask is added or set to the top of the stack it will be applied immediately disabling any actions not included.
 		/// </summary>
