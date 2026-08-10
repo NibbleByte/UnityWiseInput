@@ -53907,7 +53907,7 @@ MonoBehaviour:
 
     Use
     the "Save" hotkey for system pop-up and notice that player input gets automatically
-    disabled. The system pop-up <b>UIScope</b> pushes new input state to the stack
+    disabled. The system pop-up <b>UIScope</b> pushes new input mask to the stack
     thanks to the used input <b>Focus Layer</b>.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
