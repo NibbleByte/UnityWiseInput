@@ -55,6 +55,7 @@ namespace DevLocker.WiseInput.Sample
 
 				playerInput.uiInputModule = uiInputModule;
 
+				// NOTE: UI input actions are special and should be used ONLY by the InputSystemUIInputModule.
 				InputContext = new InputComponentContext(playerInput, new InputActionsMaskedStack(PlayerControls), IInputContext.InputBehaviours.Default, BindingDisplayAssets);
 				PlayerControls.SetInputContext(InputContext);
 
@@ -65,6 +66,7 @@ namespace DevLocker.WiseInput.Sample
 				var uiInputModule = gameInputObject.GetComponentInChildren<InputSystemUIInputModule>();
 				uiInputModule.actionsAsset = PlayerControls.asset;  // This will refresh the UI Input action references to the new asset.
 
+				// NOTE: UI input actions are special and should be used ONLY by the InputSystemUIInputModule.
 				InputContext = new InputCollectionContext(PlayerControls, PlayerControls.Sample_UI.Get(), IInputContext.InputBehaviours.Default, BindingDisplayAssets);
 				PlayerControls.SetInputContext(InputContext);
 
