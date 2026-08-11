@@ -166,7 +166,7 @@ namespace DevLocker.WiseInput
 	}
 
 	/// <summary>
-	/// Implement this if your game uses Unity Input system with generated <see cref="IInputActionCollection"/>.
+	/// The heart of the Wise Input system. Use it to enable/disable actions, get the last used device, get the display data for hotkeys and more.
 	/// HINT: Your implementation of <see cref="IInputActionCollection"/> can also implement this interface,
 	///		  forwarding the calls to the real input context so it is easier to use.
 	/// </summary>
