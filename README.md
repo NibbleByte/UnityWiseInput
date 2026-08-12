@@ -23,6 +23,54 @@ The input context is represented by the `IInputContext` interface, which your ga
 
 You can have multiple `IInputContext` instances at once, which is useful for split-screen gameplay.
 
+<details close>
+<summary> >>> <b>IInputContext Interface</b> <<< </summary>
+
+```C#
+public interface IInputContext
+{
+	event Action LastUsedDeviceChanged;
+	
+	event DeviceEventHandler ConnectingDevice;
+	event DeviceEventHandler DisconnectingDevice;
+
+	InputUser User { get; }
+
+	ReadOnlyArray<InputDevice> PairedDevices { get; }
+
+	void PerformPairingWithDevice(InputDevice device);
+	void UnpairDevice(InputDevice device);
+	
+	// Always enable/disable input actions via this context.
+	void EnableAction(object source, InputAction action);
+	void DisableAction(object source, InputAction action);
+	void DisableAll(object source);
+	
+	// Enabling actions by specifying who is using them allows for easier debugging.
+	IEnumerable<InputAction> GetInputActionsEnabledBy(object source);
+	public IEnumerable<object> GetEnablingSourcesFor(InputAction action);
+	
+	// Returns all input actions from your IInputActionCollection (defined in your InputActionAsset).
+	IEnumerable<InputAction> GetAllActions();
+	InputAction FindActionFor(string actionNameOrId);
+
+
+	// Stack top mask filters in what input actions to be enabled.
+	InputActionsMaskedStack InputActionsMaskedStack { get; }
+	void PushOrSetActionsMask(object source, IEnumerable<InputAction> actionsMask);
+	void PopActionsMask(object source);
+
+	InputDevice GetLastUsedInputDevice();
+	IEnumerable<InputControlScheme> GetAllInputControlSchemes();
+
+	// Used for hotkey hint displays.
+	IReadOnlyList<IInputBindingDisplayDataProvider> GetAllDisplayDataProviders();
+	IInputBindingDisplayDataProvider GetCurrentDisplayDataProvider();
+}
+```
+
+</details>
+
 ### UI Input Scopes
 `UIScope` is a component that enables or disables its child `IScopeElement` components depending on whether it's active. You can nest scopes, and one of them can be focused, making all its parents active while other inactive scopes disable their elements. An enabled `IScopeElement` typically enables specific hotkeys or other objects.
 
@@ -30,8 +78,14 @@ You can have multiple `IInputContext` instances at once, which is useful for spl
 
 You can easily debug UI Scopes in the scene with the UIScopes Debugger.
 
+![UI Scope Screenshot](Docs/Screenshots/UIScopesWithDebuggerShot.png)
+
 ### Selection Controller
 This component manages the current selection in the UI. Only one should be active at any time. You can define how the selection behaves when it's lost or inactive. It relies on the existing navigation links of Unity's `Selectable` class - to set those links up quickly, use the `UI Navigation Group`.
 
+![Selection Controller Screenshot](Docs/Screenshots/SelectionControllerShot.png)
+
 ### UI Navigation Group
 This component gathers all child `Selectable` components and generates proper navigation links between them. If a `Selectable` is added or removed, the links are re-evaluated. You can define what happens when navigation moves outside the group's boundaries - wrap, call a method, jump to another group, and so on.
+
+![UI Navigation Group Screenshot](Docs/Screenshots/UINavigationGroupShot.png)
