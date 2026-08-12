@@ -78,14 +78,15 @@ public interface IInputContext
 
 You can easily debug UI Scopes in the scene with the UIScopes Debugger.
 
-![UI Scope Screenshot](Docs/Screenshots/UIScopesWithDebuggerShot.png)
+<img src="Docs/Screenshots/UIScopesWithDebuggerShot.png" alt="UI Scope Screenshot">
+
 
 ### Selection Controller
 This component manages the current selection in the UI. Only one should be active at any time. You can define how the selection behaves when it's lost or inactive. It relies on the existing navigation links of Unity's `Selectable` class - to set those links up quickly, use the `UI Navigation Group`.
 
-![Selection Controller Screenshot](Docs/Screenshots/SelectionControllerShot.png)
+<img src="Docs/Screenshots/SelectionControllerShot.png" alt="Selection Controller Screenshot" width=70%>
 
 ### UI Navigation Group
 This component gathers all child `Selectable` components and generates proper navigation links between them. If a `Selectable` is added or removed, the links are re-evaluated. You can define what happens when navigation moves outside the group's boundaries - wrap, call a method, jump to another group, and so on.
 
-![UI Navigation Group Screenshot](Docs/Screenshots/UINavigationGroupShot.png)
+<img src="Docs/Screenshots/UINavigationGroupShot.png" alt="UI Navigation Group Screenshot" width=50%>
