@@ -21,9 +21,8 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 		[Tooltip("(Optional) Input action to be used. Can be missing - indicator root will be deactivated.")]
 		[SerializeField]
-		[FormerlySerializedAs("InputAction")]
-		protected InputActionReference m_InputAction;
-		public InputActionReference InputAction => m_InputAction;
+		protected InputActionProperty m_InputProperty;
+		public InputActionProperty InputProperty => m_InputProperty;
 
 		[Tooltip("The driving hotkey display UI. If it doesn't display icon, indicator will be hidden. Keep empty to bypass this behaviour.")]
 		public HotkeyDisplayUI HotkeyDisplayUI;
@@ -61,6 +60,12 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 		protected bool m_HasInitialized = false;
 
+		protected virtual void Reset()
+		{
+			var hotkey = GetComponentInParent<HotkeyBaseScopeElement>(true);
+			m_InputProperty = hotkey ? hotkey.InputProperty : new InputActionProperty((InputActionReference)null);
+		}
+
 		public virtual bool HasContinuesInteractions()
 		{
 			if (m_InputActionCached == null)
@@ -82,14 +87,14 @@ namespace DevLocker.WiseInput.UIInputDisplay
 		/// <summary>
 		/// Set input action. Will rebind it properly.
 		/// </summary>
-		public void SetInputAction(InputActionReference inputActionReference)
+		public void SetInputAction(InputActionProperty inputProperty)
 		{
 			bool wasEnabled = Application.isPlaying && isActiveAndEnabled;
 			if (wasEnabled) {
 				OnDisable();
 			}
 
-			m_InputAction = inputActionReference;
+			m_InputProperty = inputProperty;
 
 			if (wasEnabled) {
 				OnEnable();
@@ -217,18 +222,19 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 		public IEnumerable<InputAction> GetUsedActions(IInputContext inputContext)
 		{
-			if (InputAction == null)
+			if (m_InputProperty.action?.bindings.Count == 0)
 				yield break;
 
 #if UNITY_EDITOR
 			// For editor purposes.
 			if (inputContext == null) {
-				yield return m_InputAction;
+				if (m_InputProperty.action != null)
+					yield return m_InputProperty.action;
 				yield break;
 			}
 #endif
 
-			InputAction action = inputContext.FindActionFor(InputAction);
+			InputAction action = inputContext.FindActionFor(m_InputProperty);
 			if (action != null) {
 				yield return action;
 			}
@@ -267,7 +273,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 		protected virtual void OnValidate()
 		{
-			Utils.Validation.ValidateMissingObject(this, InputAction, nameof(InputAction));
+			Utils.Validation.ValidateMissingObject(this, InputProperty.reference, nameof(InputProperty));
 			Utils.Validation.ValidateMissingObject(this, HotkeyDisplayUI, nameof(HotkeyDisplayUI));
 		}
 	}

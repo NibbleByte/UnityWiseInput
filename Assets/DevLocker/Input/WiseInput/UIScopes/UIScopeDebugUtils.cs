@@ -127,7 +127,7 @@ namespace DevLocker.WiseInput.UIScope
 			switch (displayType) {
 				case DisplayHotkeyType.DisplayInputActions:
 					foreach (InputAction action in actions) {
-						yield return $"{action.name}";
+						yield return action.actionMap != null ? action.name : action.ToString();
 					}
 					break;
 

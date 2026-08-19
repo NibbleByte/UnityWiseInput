@@ -62,16 +62,10 @@ namespace DevLocker.WiseInput.UIInputDisplay
 			public bool DisableLayoutElementWhenHidden = false;
 		}
 
-		public InputActionReference InputAction => m_InputAction;
 
 		[SerializeField]
-		[FormerlySerializedAs("InputAction")]
-		protected InputActionReference m_InputAction;
-		// Maybe you'd like to have the option to specify the binding here too.
-		// You can do this easily with the InputActionBindingPair class.
-		// But that is probably a bad idea, since you'll be locking this display to the binding control scheme.
-		// Most likely you'd want to update the display dynamically with the current control scheme.
-		// (i.e. binding displays keyboard key, but player switches to a controller).
+		protected InputActionProperty m_InputProperty;
+		public InputActionProperty InputProperty => m_InputProperty;
 
 		[FormerlySerializedAs("TextMeshProText")]
 		public TMPro.TextMeshProUGUI Text;
@@ -123,7 +117,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 			m_LastDevice = null;
 
-			if (m_InputAction) {
+			if (m_InputProperty.action?.bindings.Count > 0) {
 				RefreshDisplay(m_InputUIRoot.InputContext);
 			}
 		}
@@ -133,18 +127,19 @@ namespace DevLocker.WiseInput.UIInputDisplay
 		/// </summary>
 		public IEnumerable<InputAction> GetUsedActions(IInputContext inputContext)
 		{
-			if (m_InputAction == null)
+			if (m_InputProperty.action?.bindings.Count == 0)
 				yield break;
 
 #if UNITY_EDITOR
 			// For editor purposes.
 			if (inputContext == null) {
-				yield return m_InputAction;
+				if (m_InputProperty.action != null)
+					yield return m_InputProperty.action;
 				yield break;
 			}
 #endif
 
-			InputAction action = inputContext.FindActionFor(m_InputAction);
+			InputAction action = inputContext.FindActionFor(m_InputProperty);
 			if (action != null) {
 				yield return action;
 			}
@@ -153,14 +148,14 @@ namespace DevLocker.WiseInput.UIInputDisplay
 		/// <summary>
 		/// Set input action. Will rebind it properly.
 		/// </summary>
-		public void SetInputAction(InputActionReference inputActionReference)
+		public void SetInputAction(InputActionProperty inputProperty)
 		{
 			bool wasEnabled = Application.isPlaying && isActiveAndEnabled;
 			if (wasEnabled) {
 				OnDisable();
 			}
 
-			m_InputAction = inputActionReference;
+			m_InputProperty = inputProperty;
 
 			if (wasEnabled) {
 				OnEnable();
@@ -242,9 +237,9 @@ namespace DevLocker.WiseInput.UIInputDisplay
 				deviceLayout = DisplayMode.DisplayedDeviceLayout;
 			}
 
-			InputAction action = context.FindActionFor(m_InputAction);
+			InputAction action = context.FindActionFor(m_InputProperty);
 			if (action == null) {
-				Debug.LogError($"[Input] {nameof(HotkeyDisplayUI)} couldn't find specified action {m_InputAction.name} for player {m_InputUIRoot}", this);
+				Debug.LogError($"[Input] {nameof(HotkeyDisplayUI)} couldn't find specified action {m_InputProperty.reference?.name} for player {m_InputUIRoot}", this);
 				return;
 			}
 
@@ -311,9 +306,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 		protected virtual void Reset()
 		{
 			var hotkey = GetComponentInParent<UIScope.HotkeyBaseScopeElement>(true);
-			if (hotkey) {
-				m_InputAction = hotkey.InputAction;
-			}
+			m_InputProperty = hotkey ? hotkey.InputProperty : new InputActionProperty((InputActionReference)null);
 
 			Text = GetComponent<TMPro.TextMeshProUGUI>();
 		}
@@ -354,7 +347,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 			m_InputUIRoot.InputContext.LastUsedDeviceChanged += OnLastUsedDeviceChanged;
 			m_LastDevice = null;
 
-			if (m_InputAction) {
+			if (m_InputProperty.action?.bindings.Count > 0) {
 				RefreshDisplay(m_InputUIRoot.InputContext);
 
 			}
@@ -402,14 +395,14 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 			// Keyboard/Mouse check is done in the RefreshDisplay() method. Don't do it here.
 
-			if (m_InputAction) {
+			if (m_InputProperty.action?.bindings.Count > 0) {
 				RefreshDisplay(m_InputUIRoot.InputContext);
 			}
 		}
 
 		protected virtual void OnValidate()
 		{
-			Utils.Validation.ValidateMissingObject(this, m_InputAction, nameof(m_InputAction));
+			Utils.Validation.ValidateMissingObject(this, m_InputProperty.reference, nameof(m_InputProperty));
 			Utils.Validation.ValidateMissingObject(this, Text, nameof(TMPro.TextMeshProUGUI));
 		}
 

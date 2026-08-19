@@ -1481,7 +1481,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -1602,7 +1602,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 988dce65-38e2-412f-b9a9-2c31b89dd49c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -1822,7 +1833,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -2724,7 +2735,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -2853,7 +2864,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a6fb5592-1bc0-40f2-8deb-eca00184be78
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -4123,7 +4145,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -4252,7 +4274,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e7082d17-126a-4467-be10-9789ffe460c1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -4351,7 +4384,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe81467647486549b4e360de6a75ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: -2575652600664729958, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ea499146-b63a-4c5e-adb7-6e8ffb66560e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -2575652600664729958, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 1756972698}
   BindingNumberToUse: 1
   CompositePartNumberToUse: 0
@@ -4380,7 +4424,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe81467647486549b4e360de6a75ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: -2575652600664729958, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b31e051f-dbb3-4e55-b180-62d0d8d21708
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -2575652600664729958, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 893910398}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -5117,11 +5172,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 880308240}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 1933682032}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -5318,7 +5373,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -5681,7 +5736,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -4866175304481735369, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -5790,7 +5845,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 223250092}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 1933682032}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -5798,7 +5853,7 @@ PrefabInstance:
       value: Log Bar
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -6393,7 +6448,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2852409272423593020, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 2852409272423593020, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -6515,7 +6570,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 2852409272423593020, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5fc44f6a-32f1-4bae-9b79-f3e4f9721f30
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 2852409272423593020, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -7163,7 +7229,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6d6315b1-0a2b-4693-812e-374377375b39
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
 --- !u!114 &281394513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7469,7 +7546,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -7590,7 +7667,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 2218ec86-f656-4a92-b074-0e01e640b4f3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -7944,7 +8032,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6334418900623952946, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -6334418900623952946, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -8054,7 +8142,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -6334418900623952946, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a3fbafa7-fe51-4658-b2eb-5dccec789cda
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6334418900623952946, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -8101,7 +8200,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 243494926}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -8113,7 +8212,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -8677,7 +8776,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 929089774}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -8798,7 +8897,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -3826290194345915167, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8aa67a83-2a62-41ac-a239-46481755ba6e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -3826290194345915167, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -9093,7 +9203,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -10784,7 +10894,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cd72c18599a5b4dbc783bf08f0244c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 066e0098-5dff-47dd-af88-67865af38407
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 568275855}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -11035,7 +11156,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 2119924032}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 243494926}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -11047,7 +11168,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -11157,7 +11278,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 760973059}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 243494926}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -11169,7 +11290,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -11487,7 +11608,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 1016082980}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 974171614}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -11503,7 +11624,7 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -12473,7 +12594,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -4852346763332366818, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -12599,7 +12720,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 1549746537}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -12611,7 +12732,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 4965881947399585824, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -15003,7 +15124,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5c0b1d70-07e1-4a2b-a955-a98c47f4052c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   FocusWhilePressed: 0
   FocusPolicy: 0
   FocusScopes:
@@ -16408,7 +16540,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1529557860106047985, guid: e493d6f8479e93d429535f72004fa8bf, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 250860020}
     - target: {fileID: 1529557860106047987, guid: e493d6f8479e93d429535f72004fa8bf, type: 3}
@@ -16416,7 +16548,7 @@ PrefabInstance:
       value: Sample-HotkeyWithProgressIcon
       objectReference: {fileID: 0}
     - target: {fileID: 6824723327870316339, guid: e493d6f8479e93d429535f72004fa8bf, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 879276320}
     m_RemovedComponents: []
@@ -16446,7 +16578,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -16826,7 +16958,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -17323,7 +17455,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a32be60f-b133-4dbe-8b48-652312708e47
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -17381,7 +17524,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe81467647486549b4e360de6a75ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 51a40911-db9f-4e4d-9689-7125c96813a1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 330682589}
   BindingNumberToUse: 1
   CompositePartNumberToUse: 0
@@ -17410,7 +17564,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe81467647486549b4e360de6a75ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 3f5f7a22-4bf8-417e-8653-a0b140e1bba8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 262609986}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -19031,7 +19196,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a2ab4706-e325-486c-9023-85f5a7821c04
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   LayoutElement: {fileID: 726269084}
   MouseButtonParts:
   - {fileID: 591675163}
@@ -19895,7 +20071,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9006038541761890308, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 9006038541761890308, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -20005,7 +20181,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 9006038541761890308, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 3140d8c8-f2b3-4cb3-8f5d-97bb2abed514
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 9006038541761890308, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -20792,7 +20979,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 7002116072815299301, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 576d951d-d476-4a77-881d-e3843f40d69f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7002116072815299301, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -20943,7 +21141,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 127898969}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -21823,7 +22021,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -545284412596635738, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -545284412596635738, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -21933,7 +22131,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -545284412596635738, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d9ed0b26-ce51-4acd-bbc8-bd8a9edf5d8e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -545284412596635738, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   FocusWhilePressed: 0
   FocusPolicy: 0
   FocusScopes:
@@ -22067,7 +22276,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 1516200784}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -22523,7 +22732,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 692682706}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 780649746}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -22531,7 +22740,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -23678,7 +23887,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6334418900623952946, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -6334418900623952946, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -23788,7 +23997,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -6334418900623952946, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d1ebfbe2-e71a-46ae-a522-1a02cfb5d0b3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6334418900623952946, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -25185,7 +25405,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -545284412596635738, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -545284412596635738, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -26573,7 +26793,7 @@ PrefabInstance:
       value: Sample-HotkeyIcon
       objectReference: {fileID: 0}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 241900218}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -26679,7 +26899,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 1770283047}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 974171614}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -26695,7 +26915,7 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -27303,7 +27523,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e8eaa6a3-e4e1-439d-b7b6-eff82a482c54
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
 --- !u!114 &996918890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28734,7 +28965,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 1110550598}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -28863,7 +29094,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -3826290194345915167, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 835d66d0-51f0-4810-aaf3-66a95b947b60
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -3826290194345915167, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -29073,7 +29315,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cd72c18599a5b4dbc783bf08f0244c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 686ab070-3436-46c4-9e8e-cd6122debe25
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 29372842}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -29387,7 +29640,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -30139,7 +30392,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 1110550598}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -30268,7 +30521,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -3826290194345915167, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 337ac1ea-91fc-4c22-9dd2-d923707c87c9
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -3826290194345915167, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -30542,7 +30806,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 7002116072815299301, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -30668,7 +30932,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -30789,7 +31053,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ea4f4f09-2ce8-4cff-89f9-797b28a18789
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -33982,7 +34257,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1861849840156152537, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -1861849840156152537, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -35299,7 +35574,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 366762839}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 857160571}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -35307,7 +35582,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -35787,7 +36062,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: c941cdf8-7291-43a6-b6f3-fb180e5af4c0
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
 --- !u!1 &1344555287
 GameObject:
   m_ObjectHideFlags: 0
@@ -35977,7 +36263,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe81467647486549b4e360de6a75ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: -8823817378572493274, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 1e08ac0c-0765-4f37-8440-2559a63b1cf7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8823817378572493274, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 675449941}
   BindingNumberToUse: 1
   CompositePartNumberToUse: 0
@@ -36006,7 +36303,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe81467647486549b4e360de6a75ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: -8823817378572493274, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: de44b67e-ea9e-4a83-929e-c95ee5d9d2c6
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8823817378572493274, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 576993340}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -36623,7 +36931,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 760973059}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 780649746}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -36631,7 +36939,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -37647,7 +37955,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 1549746537}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -37659,7 +37967,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 4965881947399585824, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -37813,7 +38121,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cd72c18599a5b4dbc783bf08f0244c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 64536466-aca9-419c-a1f1-597e8cfa6bd8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 1644934204}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -39264,7 +39583,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -39382,7 +39701,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 9b11d9c7-bc94-45de-af11-4237147c6be5
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   FocusWhilePressed: 0
   FocusPolicy: 0
   FocusScopes:
@@ -39766,7 +40096,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -4852346763332366818, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 28685c62-7680-4c2b-9ae6-d8bf044df987
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4852346763332366818, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -40986,7 +41327,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 190079115}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 599472232}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -40998,7 +41339,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -3826290194345915167, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -41181,7 +41522,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -4866175304481735369, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 241ab71e-4049-4185-8cac-7f768810a665
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4866175304481735369, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   FocusWhilePressed: 1
   FocusPolicy: 0
   FocusScopes:
@@ -41236,7 +41588,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cd72c18599a5b4dbc783bf08f0244c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: -3826290194345915167, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 74afb3e2-267c-4d0b-8fb1-083e431769e3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -3826290194345915167, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 1695073391}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -42228,7 +42591,7 @@ PrefabInstance:
       value: Sample-HotkeyIcon
       objectReference: {fileID: 0}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 490938432}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -42749,7 +43112,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 2119924032}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 780649746}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -42757,7 +43120,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -43020,7 +43383,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -43141,7 +43504,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ebc70dab-68b3-4aa4-8946-2a501c37f6b1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -44962,7 +45336,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 190079115}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 359710718}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -44974,7 +45348,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -45549,7 +45923,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cd72c18599a5b4dbc783bf08f0244c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a9b084fa-757b-44ec-8f8d-c347b335d34c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 1938563520}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -46241,7 +46626,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 1331933430}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 780649746}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -46253,7 +46638,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -46503,7 +46888,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 821266503}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 780649746}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -46515,7 +46900,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -47585,7 +47970,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -47706,7 +48091,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: eac06ed8-417b-4451-930e-1dc9a29e5012
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4594206407893972576, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -48251,7 +48647,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -48372,7 +48768,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e56cd1a2-8fb9-486f-b698-09e4a97ed13f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -48435,7 +48842,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6345765068046251359, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -6345765068046251359, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -48557,7 +48964,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -6345765068046251359, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: cacae21a-6265-49c9-8378-caa4ba081f0e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6345765068046251359, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -48788,7 +49206,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 457089395}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 670108420}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -48796,7 +49214,7 @@ PrefabInstance:
       value: Log Bar
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -50165,7 +50583,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 4965881947399585824, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e3e69929-04f2-4a92-ab42-66ae3b824244
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 4965881947399585824, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   LayoutElement: {fileID: 0}
   MouseButtonParts:
   - {fileID: 44079372}
@@ -50766,7 +51195,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cd72c18599a5b4dbc783bf08f0244c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: 4965881947399585824, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b4c9c2e0-5820-4b0e-8831-9e09c3acb9cc
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 4965881947399585824, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 1083502036}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -50797,7 +51237,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 0
-  m_InputAction: {fileID: 879276320}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b74bc40a-8de2-4d31-a105-f78402dd6224
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 879276320}
   HotkeyDisplayUI: {fileID: 1858501319}
   IndicatorRoot: {fileID: 880167444}
   FillImage: {fileID: 180565906}
@@ -53500,7 +53951,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1529557860106047985, guid: e493d6f8479e93d429535f72004fa8bf, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 250860020}
     - target: {fileID: 1529557860106047987, guid: e493d6f8479e93d429535f72004fa8bf, type: 3}
@@ -53508,7 +53959,7 @@ PrefabInstance:
       value: Sample-HotkeyWithProgressIcon
       objectReference: {fileID: 0}
     - target: {fileID: 6824723327870316339, guid: e493d6f8479e93d429535f72004fa8bf, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 879276320}
     m_RemovedComponents: []
@@ -53822,7 +54273,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cd72c18599a5b4dbc783bf08f0244c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputAction: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 260a27b7-3247-47fc-a0c0-ac0688f130e6
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 8068547124456860441, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 2001280233}
   BindingNumberToUse: 0
   CompositePartNumberToUse: 0
@@ -54220,7 +54682,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -54349,7 +54811,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 60c97464-b3a9-4814-b41f-6325a19ed022
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -7452923264383808493, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -54642,7 +55115,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: af763214-0929-4b6e-9bc3-3aa5ec4e0b5c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   LayoutElement: {fileID: 0}
   MouseButtonParts:
   - {fileID: 520265122}
@@ -55547,7 +56031,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -55668,7 +56152,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 1d09ec6b-7104-431e-96cf-f4ac218db383
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -56050,7 +56545,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ac2994f1-6c88-41ba-85ed-9ea811589dfe
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   FocusWhilePressed: 0
   FocusPolicy: 0
   FocusScopes:
@@ -56314,11 +56820,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 2110965488}
     m_Modifications:
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 670108420}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -56436,7 +56942,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9006038541761890308, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 9006038541761890308, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
@@ -56546,7 +57052,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 9006038541761890308, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: f34df819-734b-4302-bd9b-2255de493ce0
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 9006038541761890308, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   OnPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -57504,7 +58021,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: 3516802644060230671, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 767b8255-e230-47eb-b8c2-f5b269b3da05
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 3516802644060230671, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   ScrollRect: {fileID: 0}
   Direction: 1
   ScrollSpeed: 100
@@ -57522,7 +58050,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -1861849840156152537, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: cca82e0b-0e82-47e9-8863-347a134ae946
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1861849840156152537, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   ScrollRect: {fileID: 0}
   Direction: 0
   ScrollSpeed: 100
@@ -57655,7 +58194,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 1926453648540840279, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692551952785421, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -57663,7 +58202,7 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5793692553406251312, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5793692553406251313, guid: 9cc4da68abd8240479a5d72782a955f1, type: 3}
@@ -58036,7 +58575,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 1
-  m_InputAction: {fileID: -545284412596635738, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 4d9b3f7f-81ca-4b17-83fb-a5e20b689d91
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -545284412596635738, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
 --- !u!222 &6380400036925527506
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -58062,7 +58612,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5382538459929022573, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749554, guid: 504071ccb1c836441a5189a8697819a8, type: 3}
-      propertyPath: m_InputAction
+      propertyPath: m_InputProperty.m_Reference
       value: 
       objectReference: {fileID: -545284412596635738, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
     - target: {fileID: 5394036698972749555, guid: 504071ccb1c836441a5189a8697819a8, type: 3}

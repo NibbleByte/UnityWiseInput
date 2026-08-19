@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Utilities;
 
 namespace DevLocker.WiseInput
 {
@@ -51,7 +52,8 @@ namespace DevLocker.WiseInput
 
 		public IReadOnlyCollection<InputAction> Actions => m_Actions.Keys;
 
-		private Dictionary<InputAction, HashSet<object>> m_Actions = new Dictionary<InputAction, HashSet<object>>();
+		private Dictionary<InputAction, HashSet<object>> m_Actions = new ();
+		private Dictionary<InputAction, HashSet<object>> m_EmbeddedActions = new ();
 
 		private List<StateSourceBind> m_MasksStack = new List<StateSourceBind>();
 
@@ -94,8 +96,19 @@ namespace DevLocker.WiseInput
 			if (source is InputAction)
 				throw new ArgumentException("Enabling by source of type InputAction is not allowed.");
 
-			if (!m_Actions.TryGetValue(action, out HashSet<object> enableSources))
-				throw new ArgumentException($"Input action \"{action}\" is not part of the tracked actions.");
+			HashSet<object> enableSources;
+
+			if (action.actionMap != null) {
+				if (!m_Actions.TryGetValue(action, out enableSources))
+					throw new ArgumentException($"Input action \"{action}\" is not part of the tracked actions.");
+
+			} else {
+
+				if (!m_EmbeddedActions.TryGetValue(action, out enableSources)) {
+					enableSources = new();
+					m_EmbeddedActions.Add(action, enableSources);
+				}
+			}
 
 			if (enableSources.Count == 0 && action.enabled) {
 				UnityEngine.Debug.LogError($"Trying to enable input action \"{action.name}\" by {source}, but it is already enabled. Some code is enabling input actions without the IInputContext!", source as UnityEngine.Object);
@@ -125,8 +138,18 @@ namespace DevLocker.WiseInput
 			if (source is InputAction)
 				throw new ArgumentException("Disabling by source of type InputAction is not allowed.");
 
-			if (!m_Actions.TryGetValue(action, out HashSet<object> enableSources))
-				throw new ArgumentException($"Input action \"{action}\" is not part of the tracked actions.");
+			HashSet<object> enableSources;
+
+			if (action.actionMap != null) {
+				if (!m_Actions.TryGetValue(action, out enableSources))
+					throw new ArgumentException($"Input action \"{action}\" is not part of the tracked actions.");
+
+			} else {
+
+				if (!m_EmbeddedActions.TryGetValue(action, out enableSources)) {
+					enableSources = new();
+				}
+			}
 
 			if (enableSources.Count > 0 && !action.enabled && (m_CurrentActionsMask?.Contains(action) ?? true)) {
 				UnityEngine.Debug.LogError($"Trying to disable input action \"{action.name}\" by {source}, but it is already disabled. Some code is disabling input actions without the IInputContext!", source as UnityEngine.Object);
@@ -136,6 +159,10 @@ namespace DevLocker.WiseInput
 
 			if (enableSources.Count == 0) {
 				action.Disable();
+
+				if (action.actionMap == null) {
+					m_EmbeddedActions.Remove(action);
+				}
 			}
 		}
 
@@ -160,6 +187,16 @@ namespace DevLocker.WiseInput
 					pair.Key.Disable();
 				}
 			}
+
+			if (m_EmbeddedActions.Count > 0) {
+				foreach (var pair in m_EmbeddedActions.ToList()) {
+					if (pair.Value.Remove(source) && pair.Value.Count == 0) {
+						pair.Key.Disable();
+
+						m_EmbeddedActions.Remove(pair.Key);
+					}
+				}
+			}
 		}
 
 		/// <summary>
@@ -173,7 +210,7 @@ namespace DevLocker.WiseInput
 			if (source is InputAction)
 				throw new ArgumentException("Requests with source type InputAction is not allowed.");
 
-			foreach (var pair in m_Actions) {
+			foreach (var pair in m_Actions.Concat(m_EmbeddedActions)) {
 				if (pair.Value.Contains(source)) {
 					yield return pair.Key;
 				}
@@ -186,6 +223,9 @@ namespace DevLocker.WiseInput
 		public IEnumerable<object> GetEnablingSourcesFor(InputAction action)
 		{
 			if (m_Actions.TryGetValue(action, out HashSet<object> enablingSources))
+				return enablingSources;
+
+			if (m_EmbeddedActions.TryGetValue(action, out enablingSources))
 				return enablingSources;
 
 			return Array.Empty<object>();
@@ -268,12 +308,12 @@ namespace DevLocker.WiseInput
 		{
 			if (m_MasksStack.Count > 0) {
 				if (m_CurrentActionsMask.Contains(action)) {
-					return m_Actions[action].Count > 0;
+					return m_Actions[action].Count > 0 || m_EmbeddedActions.ContainsKey(action); // Embedded should not contain empty sets.
 				} else {
 					return false;
 				}
 			} else {
-				return m_Actions[action].Count > 0;
+				return m_Actions[action].Count > 0 || m_EmbeddedActions.ContainsKey(action);
 			}
 		}
 
@@ -284,7 +324,7 @@ namespace DevLocker.WiseInput
 		{
 			var conflictsReport = new InputActionConflictsReport();
 
-			foreach(var pair in m_Actions) {
+			foreach(var pair in m_Actions.Concat(m_EmbeddedActions)) {
 
 				// If no sources but action is enabled means some code is enabling actions without the IInputContext.
 				if (pair.Value.Count == 0 && pair.Key.enabled) {
@@ -319,6 +359,17 @@ namespace DevLocker.WiseInput
 				pair.Key.Disable();
 				pair.Value.Clear();
 			}
+
+			if (m_EmbeddedActions.Count > 0) {
+				foreach (var pair in m_EmbeddedActions.ToList()) {
+					if (exclude != null && exclude.Contains(pair.Key))
+						continue;
+
+					pair.Key.Disable();
+
+					m_EmbeddedActions.Remove(pair.Key);
+				}
+			}
 		}
 
 		/// <summary>
@@ -326,7 +377,7 @@ namespace DevLocker.WiseInput
 		/// </summary>
 		public void ForceRefreshInputActionStates()
 		{
-			foreach(var pair in m_Actions) {
+			foreach(var pair in m_Actions.Concat(m_EmbeddedActions)) {
 				InputAction action = pair.Key;
 				HashSet<object> enableSources = pair.Value;
 
