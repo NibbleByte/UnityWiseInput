@@ -66,7 +66,7 @@ namespace DevLocker.WiseInput.UIScope
 
 					nextScope.Focus();
 				} else {
-					Debug.LogWarning($"[Input] No scope to focus for \"{name}\" - \"{m_InputAction}\"", this);
+					Debug.LogWarning($"[Input] No scope to focus for \"{name}\" - \"{m_InputProperty.reference?.name}\"", this);
 				}
 
 			} else if (m_PrevScopeWhenPressed == null) {
@@ -82,14 +82,14 @@ namespace DevLocker.WiseInput.UIScope
 					}
 
 					if (m_TargetScopeWhenPressed.ResetAllActionsOnEnable) {
-						Debug.LogError($"Focusing scope \"{m_TargetScopeWhenPressed.name}\" by holding \"{m_InputAction.name}\", but it will reset all actions on enable! Disable this setting!", m_TargetScopeWhenPressed);
+						Debug.LogError($"Focusing scope \"{m_TargetScopeWhenPressed.name}\" by holding \"{m_InputProperty.reference?.name}\", but it will reset all actions on enable! Disable this setting!", m_TargetScopeWhenPressed);
 					}
 
 					if (!m_TargetScopeWhenPressed.IsFocused) {
 						m_TargetScopeWhenPressed.Focus();
 					}
 				} else {
-					Debug.LogWarning($"[Input] No scope to focus for \"{name}\" - \"{m_InputAction}\"", this);
+					Debug.LogWarning($"[Input] No scope to focus for \"{name}\" - \"{m_InputProperty.reference?.name}\"", this);
 					m_PrevScopeWhenPressed = null;
 				}
 			}

@@ -499,6 +499,15 @@ namespace DevLocker.WiseInput
 		}
 
 		/// <summary>
+		/// Find InputAction by action reference.
+		/// </summary>
+		public static InputAction FindActionFor(this IInputContext context, InputActionProperty inputActionProp, bool throwIfNotFound = false)
+		{
+			InputAction action = inputActionProp.action;
+			return action.actionMap != null ? context.FindActionFor(inputActionProp.action.id, throwIfNotFound) : action;
+		}
+
+		/// <summary>
 		/// Is the specified action enabled by the provided source.
 		/// </summary>
 		public static bool IsEnabledBy(this IInputContext context, object source, InputAction action)

@@ -292,7 +292,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipHotkey: 0
-  m_InputAction: {fileID: 0}
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Input Property
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 65570178-e07b-4151-9078-406dcd2cf07d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   HotkeyDisplayUI: {fileID: 1529557860106047985}
   IndicatorRoot: {fileID: 4408878009356400716}
   FillImage: {fileID: 502590122280986646}

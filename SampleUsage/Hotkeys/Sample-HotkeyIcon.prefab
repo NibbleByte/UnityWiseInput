@@ -50,6 +50,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe81467647486549b4e360de6a75ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_InputProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Input Property
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 4fb81771-ca56-4624-b8c7-58e6531e2e45
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_InputAction: {fileID: 2211202989065101172, guid: cfe6350f5d9d98c4d95bffc578542f16, type: 3}
   Text: {fileID: 6202383048871334505}
   BindingNumberToUse: 0
@@ -133,6 +145,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0

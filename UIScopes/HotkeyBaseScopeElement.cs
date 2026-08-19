@@ -21,10 +21,12 @@ namespace DevLocker.WiseInput.UIScope
 		[HideInInspector]	// Draw manually in the editor.
 		public SkipHotkeyOption SkipHotkey = SkipHotkeyOption.InputFieldTextFocused;
 
-		[HideInInspector]	// Draw manually in the editor.
+
+
+		[HideInInspector]   // Draw manually in the editor.
 		[SerializeField]
-		protected InputActionReference m_InputAction;
-		public InputActionReference InputAction => m_InputAction;
+		protected InputActionProperty m_InputProperty;
+		public InputActionProperty InputProperty => m_InputProperty;
 
 		protected bool m_ActionStarted { get; private set; } = false;
 		protected bool m_ActionPerformed { get; private set; } = false;
@@ -40,6 +42,7 @@ namespace DevLocker.WiseInput.UIScope
 		{
 			// Let scopes do the enabling or else you'll get warnings for hotkey conflicts for multiple scopes with the same hotkey on screen.
 			enabled = false;
+			m_InputProperty = new InputActionProperty((InputActionReference) null);	// Force initialize for reference.
 		}
 
 		protected virtual void Awake()
@@ -176,7 +179,7 @@ namespace DevLocker.WiseInput.UIScope
 			if (!m_InputUIRoot.IsActive)
 				yield break;
 
-			InputAction action = m_InputUIRoot.InputContext.FindActionFor(m_InputAction);
+			InputAction action = m_InputUIRoot.InputContext.FindActionFor(m_InputProperty);
 			if (action.phase != InputActionPhase.Performed) {
 				// Context is the same in all the events - it keeps reference to the state. I think.
 				OnInputCancel(context);
@@ -189,18 +192,19 @@ namespace DevLocker.WiseInput.UIScope
 
 		public IEnumerable<InputAction> GetUsedActions(IInputContext inputContext)
 		{
-			if (m_InputAction == null)
+			if (m_InputProperty.action?.bindings.Count == 0)
 				yield break;
 
 #if UNITY_EDITOR
 			// For editor purposes.
 			if (inputContext == null) {
-				yield return m_InputAction;
+				if (m_InputProperty.action != null)
+					yield return m_InputProperty.action;
 				yield break;
 			}
 #endif
 
-			InputAction action = inputContext.FindActionFor(m_InputAction);
+			InputAction action = inputContext.FindActionFor(m_InputProperty);;
 			if (action != null) {
 				yield return action;
 			}
@@ -209,14 +213,14 @@ namespace DevLocker.WiseInput.UIScope
 		/// <summary>
 		/// Set input action. Will rebind it properly.
 		/// </summary>
-		public void SetInputAction(InputActionReference inputActionReference)
+		public void SetInputAction(InputActionProperty inputProperty)
 		{
 			bool wasEnabled = Application.isPlaying && isActiveAndEnabled;
 			if (wasEnabled) {
 				OnDisable();
 			}
 
-			m_InputAction = inputActionReference;
+			m_InputProperty = inputProperty;
 
 			if (wasEnabled) {
 				OnEnable();
@@ -233,7 +237,7 @@ namespace DevLocker.WiseInput.UIScope
 				if (ReferenceEquals(child, this))
 					continue;
 
-				child.SetInputAction(InputAction);
+				child.SetInputAction(m_InputProperty);
 
 #if UNITY_EDITOR
 				if (!Application.isPlaying) {
@@ -245,7 +249,7 @@ namespace DevLocker.WiseInput.UIScope
 
 		protected virtual void OnValidate()
 		{
-			Utils.Validation.ValidateMissingObject(this, m_InputAction, nameof(m_InputAction));
+			Utils.Validation.ValidateMissingObject(this, m_InputProperty.reference, nameof(m_InputProperty));
 
 			// Check the Reset() message.
 			if (!Application.isPlaying && enabled) {
@@ -274,7 +278,7 @@ namespace DevLocker.WiseInput.UIScope
 
 			EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(HotkeyBaseScopeElement.SkipHotkey)));
 
-			EditorGUILayout.PropertyField(serializedObject.FindProperty("m_" + nameof(HotkeyBaseScopeElement.InputAction)));
+			EditorGUILayout.PropertyField(serializedObject.FindProperty("m_InputProperty"), includeChildren: true);
 
 			if (EditorGUI.EndChangeCheck()) {
 				m_WasChanged = true;

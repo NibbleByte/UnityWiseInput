@@ -62,7 +62,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 				m_RebindOperation = null;
 			}
 
-			InputAction action = m_InputUIRoot.InputContext.FindActionFor(DisplayUI.InputAction);
+			InputAction action = m_InputUIRoot.InputContext.FindActionFor(DisplayUI.InputProperty);
 
 			if (DisplayUI.CurrentlyDisplayedData.Binding.id == Guid.Empty)
 				return;
@@ -129,7 +129,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 			if (DisplayUI.CurrentlyDisplayedData.Binding.id == Guid.Empty)
 				return;
 
-			InputAction action = m_InputUIRoot.InputContext.FindActionFor(DisplayUI.InputAction);
+			InputAction action = m_InputUIRoot.InputContext.FindActionFor(DisplayUI.InputProperty);
 			action.RemoveBindingOverride(DisplayUI.CurrentlyDisplayedData.BindingIndex);
 
 			DisplayUI.RefreshDisplay();

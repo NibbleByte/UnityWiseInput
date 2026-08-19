@@ -26,7 +26,7 @@ namespace DevLocker.WiseInput.UIScope
 	/// </summary>
 	public interface IHotkeysWithInputActions
 	{
-		IEnumerable<UnityEngine.InputSystem.InputAction> GetUsedActions(IInputContext inputContext);
+		IEnumerable<InputAction> GetUsedActions(IInputContext inputContext);
 	}
 
 	/// <summary>
@@ -34,7 +34,7 @@ namespace DevLocker.WiseInput.UIScope
 	/// </summary>
 	public interface IWritableHotkeyInputActionReference
 	{
-		void SetInputAction(UnityEngine.InputSystem.InputActionReference inputActionReference);
+		void SetInputAction(InputActionProperty inputProperty);
 	}
 
 	/// <summary>

@@ -129,11 +129,11 @@ namespace DevLocker.WiseInput.UIScope
 
 			bool isAxisAction = serializedObject.targetObjects
 				.OfType<HotkeyBaseScopeElement>()
-				.Any(hotkey => hotkey.InputAction?.action?.expectedControlType == HotkeyEventScopeElement.AxisLayoutName);
+				.Any(hotkey => hotkey.InputProperty.action?.expectedControlType == HotkeyEventScopeElement.AxisLayoutName);
 
 			bool isVectorAction = serializedObject.targetObjects
 				.OfType<HotkeyBaseScopeElement>()
-				.Any(hotkey => hotkey.InputAction?.action?.expectedControlType == HotkeyEventScopeElement.Vector2LayoutName);
+				.Any(hotkey => hotkey.InputProperty.action?.expectedControlType == HotkeyEventScopeElement.Vector2LayoutName);
 
 			HotkeyEventScopeElement singleInstance = targets.Length == 1 ? (HotkeyEventScopeElement)target : null;
 

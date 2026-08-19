@@ -40,7 +40,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 				if (hotkey == null)
 					continue;
 
-				bool actionEnabled = m_InputUIRoot.IsActive && (m_InputUIRoot.InputContext?.FindActionFor(hotkey.InputAction)?.enabled ?? false);
+				bool actionEnabled = m_InputUIRoot.IsActive && (m_InputUIRoot.InputContext?.FindActionFor(hotkey.InputProperty)?.enabled ?? false);
 				if (actionEnabled != hotkey.gameObject.activeSelf) {
 					hotkey.gameObject.SetActive(actionEnabled);
 					hasChanges = true;
