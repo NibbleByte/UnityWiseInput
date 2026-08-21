@@ -16,11 +16,12 @@ MonoBehaviour:
   DeviceIcon: {fileID: 0}
   DeviceIconSmall: {fileID: 0}
   DeviceColor: {r: 0, g: 0.44705883, b: 1, a: 1}
-  FallbackToDefaultDisplayTexts: 1
+  m_FallbackToDefaultDisplayTexts: 1
   m_SupportsUINavigationSelection: 1
   FormatBindingTexts: 
   FormatBindingSprites: 
   MatchingControlScheme: Gamepad
+  EmbeddedActionsMatchingPath: <Gamepad>
   MatchingDeviceLayouts:
   - DualSenseGamepadHID
   - DualShock4GamepadHID
