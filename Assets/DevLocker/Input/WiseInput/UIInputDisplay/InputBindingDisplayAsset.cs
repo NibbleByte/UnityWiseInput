@@ -52,12 +52,21 @@ namespace DevLocker.WiseInput.UIInputDisplay
 		[InputControlSchemePicker]
 		[Tooltip("The control scheme that matches the devices listed below.")]
 		public string MatchingControlScheme;
+
+		[Tooltip("Embedded input actions (not assets) don't support control scheme filtering directly. " +
+				 "Use this field to filter them by control path prefix instead. Accepts one or more prefixes " +
+				 "separated by ';'. Examples: \"<Gamepad>\" or \"<Keyboard>;<Mouse>\"")]
+		public string EmbeddedActionsMatchingPath;
+
+		[Tooltip("Filter by specific device type. Useful to distinguish between Xbox and Playstation controllers.")]
 		public string[] MatchingDeviceLayouts;
 
 		public BindingDisplayAssetsData[] BindingDisplays;
 
 		[NonSerialized]
 		private InputBinding m_ControlSchemeMatchBinding = new InputBinding();
+		[NonSerialized]
+		private string[] m_EmbeddedActionsMatchPathStarts = null;
 		private KeyValuePair<InputBinding, BindingDisplayAssetsData>[] m_BindingDisplaysAssetsCache;
 
 
@@ -90,6 +99,16 @@ namespace DevLocker.WiseInput.UIInputDisplay
 			}
 
 			m_ControlSchemeMatchBinding.groups = MatchingControlScheme;
+			m_EmbeddedActionsMatchPathStarts = m_EmbeddedActionsMatchPathStarts ?? EmbeddedActionsMatchingPath.Split(";", StringSplitOptions.RemoveEmptyEntries);
+
+			if (action.actionMap != null && string.IsNullOrWhiteSpace(MatchingControlScheme)) {
+				Debug.LogError($"[Input] Action {action.name} requires matching control scheme, but non is specified for {name}.", this);
+				yield break;
+			}
+			if (action.actionMap == null && m_EmbeddedActionsMatchPathStarts.Length == 0) {
+				Debug.LogError($"[Input] Action {action.name} is embedded which needs match part start, but non is specified for {name}.", this);
+				yield break;
+			}
 
 			bool compositePartsHasSprites = false;
 			var compositeBindingParts = new List<InputBindingDisplayData>();
@@ -104,7 +123,11 @@ namespace DevLocker.WiseInput.UIInputDisplay
 					++i;
 
 					// Assume the other parts are of the same scheme.
-					if (!m_ControlSchemeMatchBinding.Matches(bindings[i]))
+					if (action.actionMap != null && !m_ControlSchemeMatchBinding.Matches(bindings[i]))
+						continue;
+
+					// Assume the other parts are of the same scheme.
+					if (action.actionMap == null && !m_EmbeddedActionsMatchPathStarts.Any(p => bindings[i].path.StartsWith(p, StringComparison.OrdinalIgnoreCase)))
 						continue;
 
 					if (i >= bindings.Count || !bindings[i].isPartOfComposite) {
@@ -120,8 +143,12 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 					--i;	// Compensate for the initial for-loop iteration.
 
-				} else if (!m_ControlSchemeMatchBinding.Matches(binding)) {
+				} else if (action.actionMap != null && !m_ControlSchemeMatchBinding.Matches(binding)) {
 					// InputBinding.Matches() compares semantically the binding. In case you have ";Keyboard&Mouse" etc...
+					// Embedded actions do not have scheme (group) defined.
+					continue;
+
+				} else if (action.actionMap == null && !m_EmbeddedActionsMatchPathStarts.Any(p => bindings[i].path.StartsWith(p, StringComparison.OrdinalIgnoreCase))) {
 					continue;
 				}
 

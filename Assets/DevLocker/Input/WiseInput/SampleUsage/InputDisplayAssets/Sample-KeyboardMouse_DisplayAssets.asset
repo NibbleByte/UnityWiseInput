@@ -16,11 +16,12 @@ MonoBehaviour:
   DeviceIcon: {fileID: 0}
   DeviceIconSmall: {fileID: 0}
   DeviceColor: {r: 1, g: 0.8895351, b: 0, a: 1}
-  FallbackToDefaultDisplayTexts: 1
+  m_FallbackToDefaultDisplayTexts: 1
   m_SupportsUINavigationSelection: 1
   FormatBindingTexts: <color=#574108><b>{binding}</b></color>
   FormatBindingSprites: 
   MatchingControlScheme: Keyboard&Mouse
+  EmbeddedActionsMatchingPath: <Keyboard>;<Mouse>
   MatchingDeviceLayouts:
   - Keyboard
   - Mouse
