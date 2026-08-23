@@ -25,7 +25,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 		public InputActionProperty InputProperty => m_InputProperty;
 
 		[Tooltip("The driving hotkey display UI. If it doesn't display icon, indicator will be hidden. Keep empty to bypass this behaviour.")]
-		public HotkeyDisplayUI HotkeyDisplayUI;
+		public HotkeyDisplayUIScopeElement HotkeyDisplayUI;
 
 		[Tooltip("The root object of the indicator. It will be deactivated if the action doesn't have continues integration (e.g. \"hold\" interaction) or no action is specified.")]
 		public GameObject IndicatorRoot;

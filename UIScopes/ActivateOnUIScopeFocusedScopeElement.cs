@@ -7,7 +7,7 @@ namespace DevLocker.WiseInput.UIScope
 	/// <summary>
 	/// Monitors the <see cref="UIScope"/> and shows or hides objects if focused.
 	/// </summary>
-	public class ActivateOnUIScopeFocused : MonoBehaviour
+	public class ActivateOnUIScopeFocusedScopeElement : MonoBehaviour, IScopeElement
 	{
 		[Tooltip("Check to work with multiple objects (advanced interface)")]
 		public bool MultipleObjects = false;
@@ -118,7 +118,7 @@ namespace DevLocker.WiseInput.UIScope
 
 
 #if UNITY_EDITOR
-	[UnityEditor.CustomEditor(typeof(ActivateOnUIScopeFocused), true)]
+	[UnityEditor.CustomEditor(typeof(ActivateOnUIScopeFocusedScopeElement), true)]
 	[UnityEditor.CanEditMultipleObjects]
 	internal class ActivateOnFocusedUIScopeEditor : UnityEditor.Editor
 	{
@@ -130,21 +130,21 @@ namespace DevLocker.WiseInput.UIScope
 			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty("m_Script"));
 			UnityEditor.EditorGUI.EndDisabledGroup();
 
-			var multipleObjectsProp = serializedObject.FindProperty(nameof(ActivateOnUIScopeFocused.MultipleObjects));
+			var multipleObjectsProp = serializedObject.FindProperty(nameof(ActivateOnUIScopeFocusedScopeElement.MultipleObjects));
 			UnityEditor.EditorGUILayout.PropertyField(multipleObjectsProp);
 
-			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocused.HideObjectsOnInactiveScope)));
+			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocusedScopeElement.HideObjectsOnInactiveScope)));
 
-			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocused.Invert)));
+			UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocusedScopeElement.Invert)));
 
 			if (multipleObjectsProp.boolValue) {
-				UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocused.OnScopesFocused)));
-				UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocused.ActivatedObjects)));
+				UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocusedScopeElement.OnScopesFocused)));
+				UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocusedScopeElement.ActivatedObjects)));
 
 			} else {
 
-				UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocused.OnScopeFocused)));
-				UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocused.ActivatedObject)));
+				UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocusedScopeElement.OnScopeFocused)));
+				UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(ActivateOnUIScopeFocusedScopeElement.ActivatedObject)));
 			}
 
 			serializedObject.ApplyModifiedProperties();

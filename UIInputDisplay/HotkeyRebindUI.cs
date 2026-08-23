@@ -13,7 +13,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 	public class HotkeyRebindUI : MonoBehaviour
 	{
 		[Tooltip("The display of the hotkey - it will rebind it's InputAction.")]
-		public HotkeyDisplayUI DisplayUI;
+		public HotkeyDisplayUIScopeElement DisplayUI;
 
 		public float WaitSecondsOnMatch = 0.1f;
 
@@ -41,7 +41,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 		void Awake()
 		{
 			if (DisplayUI == null) {
-				DisplayUI = GetComponent<HotkeyDisplayUI>();
+				DisplayUI = GetComponent<HotkeyDisplayUIScopeElement>();
 			}
 
 			m_InputUIRoot = InputContextUtils.GetInputUIRootFor(gameObject);
