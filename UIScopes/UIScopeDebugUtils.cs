@@ -104,6 +104,11 @@ namespace DevLocker.WiseInput.UIScope
 					foreach (var hotkeyElement in scopeElements.OfType<IHotkeysWithInputActions>()) {
 						foreach (InputAction inputAction in hotkeyElement.GetUsedActions(context)) {
 							if (!hotkeys.Contains(inputAction)) {
+
+								// Skip embedded actions with same bindings.
+								if (inputAction.actionMap == null && hotkeys.Any(h => h.actionMap == null && h.bindings.SequenceEqual(inputAction.bindings)))
+									continue;
+
 								hotkeys.Add(inputAction);
 							}
 						}

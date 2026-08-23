@@ -59,9 +59,10 @@ namespace DevLocker.WiseInput.UIScope
 			UrlStyle.hover.textColor = UrlStyle.normal.textColor;
 			UrlStyle.active.textColor = Color.red;
 
-			WarningStyle = new GUIStyle(UrlStyle);
-			WarningStyle.fontStyle = FontStyle.Bold;
-			WarningStyle.alignment = TextAnchor.MiddleCenter;
+			WarningStyle = new GUIStyle(UrlStyle) {
+				fontStyle = FontStyle.Bold,
+				alignment = TextAnchor.MiddleCenter
+			};
 
 			DisabledStyle = new GUIStyle(UrlStyle);
 			DisabledStyle.normal.textColor = DisabledStyle.hover.textColor = Color.gray;
@@ -370,6 +371,11 @@ namespace DevLocker.WiseInput.UIScope
 							foreach (var hotkeyElement in scopeElements.OfType<IHotkeysWithInputActions>()) {
 								foreach (InputAction inputAction in hotkeyElement.GetUsedActions(context)) {
 									if (!hotkeys.Contains(inputAction)) {
+
+										// Skip embedded actions with same bindings.
+										if (inputAction.actionMap == null && hotkeys.Any(h => h.actionMap == null && h.bindings.SequenceEqual(inputAction.bindings)))
+											continue;
+
 										hotkeys.Add(inputAction);
 									}
 								}
