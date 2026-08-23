@@ -11,7 +11,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 	[RequireComponent(typeof(Image))]
 	public class HotkeyTextBackgroundUI : MonoBehaviour
 	{
-		public HotkeyDisplayUI HotkeyDisplayUI;
+		public HotkeyDisplayUIScopeElement HotkeyDisplayUI;
 
 		private Image m_Image;
 		private LayoutElement m_LayoutElement;

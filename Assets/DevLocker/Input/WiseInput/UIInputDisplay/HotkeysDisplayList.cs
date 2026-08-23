@@ -13,7 +13,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 		public bool RecalculateLayoutOnChange = true;
 
 		[Tooltip("Will be active only if the InputAction itself is enabled.")]
-		public List<HotkeyDisplayUI> HotkeyObjects;
+		public List<HotkeyDisplayUIScopeElement> HotkeyObjects;
 
 		// Used for multiple event systems (e.g. split screen).
 		protected IInputUIRoot m_InputUIRoot;

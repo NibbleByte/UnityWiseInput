@@ -1,3 +1,4 @@
+using DevLocker.WiseInput.UIScope;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 	/// Displays hotkey icon / text.
 	/// Refreshes if devices change.
 	/// </summary>
-	public class HotkeyDisplayUI : MonoBehaviour, UIScope.IHotkeysWithInputActions, UIScope.IWritableHotkeyInputActionReference
+	public class HotkeyDisplayUIScopeElement : MonoBehaviour, IScopeElement, IHotkeysWithInputActions, IWritableHotkeyInputActionReference
 	{
 		public enum DisplayModes
 		{
@@ -110,7 +111,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 				return;
 
 			if (m_InputUIRoot.InputContext == null) {
-				Debug.LogWarning($"[Input] {nameof(HotkeyDisplayUI)} button {name} can't be used if Unity Input System is not provided.", this);
+				Debug.LogWarning($"[Input] {nameof(HotkeyDisplayUIScopeElement)} button {name} can't be used if Unity Input System is not provided.", this);
 				enabled = false;
 				return;
 			}
@@ -239,7 +240,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 			InputAction action = context.FindActionFor(m_InputProperty);
 			if (action == null) {
-				Debug.LogError($"[Input] {nameof(HotkeyDisplayUI)} couldn't find specified action {m_InputProperty.reference?.name} for player {m_InputUIRoot}", this);
+				Debug.LogError($"[Input] {nameof(HotkeyDisplayUIScopeElement)} couldn't find specified action {m_InputProperty.reference?.name} for player {m_InputUIRoot}", this);
 				return;
 			}
 
@@ -305,7 +306,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 		protected virtual void Reset()
 		{
-			var hotkey = GetComponentInParent<UIScope.HotkeyBaseScopeElement>(true);
+			var hotkey = GetComponentInParent<HotkeyBaseScopeElement>(true);
 			m_InputProperty = hotkey ? hotkey.InputProperty : new InputActionProperty((InputActionReference)null);
 
 			Text = GetComponent<TMPro.TextMeshProUGUI>();
@@ -339,7 +340,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 				return;
 
 			if (m_InputUIRoot.InputContext == null) {
-				Debug.LogWarning($"[Input] {nameof(HotkeyDisplayUI)} button {name} can't be used if Unity Input System is not provided.", this);
+				Debug.LogWarning($"[Input] {nameof(HotkeyDisplayUIScopeElement)} button {name} can't be used if Unity Input System is not provided.", this);
 				enabled = false;
 				return;
 			}
@@ -360,7 +361,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 			if (m_InputUIRoot.InputContext == null) {
 				if (!m_GameQuitting) {
-					Debug.LogWarning($"[Input] {nameof(HotkeyDisplayUI)} button {name} can't be used if Unity Input System is not provided.", this);
+					Debug.LogWarning($"[Input] {nameof(HotkeyDisplayUIScopeElement)} button {name} can't be used if Unity Input System is not provided.", this);
 					enabled = false;
 				}
 				return;
@@ -388,7 +389,7 @@ namespace DevLocker.WiseInput.UIInputDisplay
 		private void OnLastUsedDeviceChanged()
 		{
 			if (m_InputUIRoot.InputContext == null) {
-				Debug.LogWarning($"[Input] {nameof(HotkeyDisplayUI)} button {name} can't be used if Unity Input System is not provided.", this);
+				Debug.LogWarning($"[Input] {nameof(HotkeyDisplayUIScopeElement)} button {name} can't be used if Unity Input System is not provided.", this);
 				enabled = false;
 				return;
 			}
@@ -413,27 +414,27 @@ namespace DevLocker.WiseInput.UIInputDisplay
 	}
 
 #if UNITY_EDITOR
-	[UnityEditor.CustomPropertyDrawer(typeof(HotkeyDisplayUI.DisplayModeData))]
+	[UnityEditor.CustomPropertyDrawer(typeof(HotkeyDisplayUIScopeElement.DisplayModeData))]
 	internal class HotkeyDisplayUIUpdateModeDataPropertyDrawer : UnityEditor.PropertyDrawer
 	{
 		public override float GetPropertyHeight(UnityEditor.SerializedProperty property, GUIContent label)
 		{
-			var modeProperty = property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.Mode));
-			var mode = (HotkeyDisplayUI.DisplayModes)modeProperty.intValue;
+			var modeProperty = property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.Mode));
+			var mode = (HotkeyDisplayUIScopeElement.DisplayModes)modeProperty.intValue;
 
 			float height = UnityEditor.EditorGUIUtility.singleLineHeight;
 
 			switch(mode) {
-				case HotkeyDisplayUI.DisplayModes.DisplaySpecificDeviceIgnoringTheCurrentOne:
-					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.DisplayedDeviceLayout)), label);
+				case HotkeyDisplayUIScopeElement.DisplayModes.DisplaySpecificDeviceIgnoringTheCurrentOne:
+					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.DisplayedDeviceLayout)), label);
 					break;
-				case HotkeyDisplayUI.DisplayModes.UpdateWithCurrentDeviceOnlyForControlScheme:
-					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.KeepDisplayingLastDevice)), label);
-					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.DisplayedControlScheme)), label);
+				case HotkeyDisplayUIScopeElement.DisplayModes.UpdateWithCurrentDeviceOnlyForControlScheme:
+					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.KeepDisplayingLastDevice)), label);
+					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.DisplayedControlScheme)), label);
 					break;
-				case HotkeyDisplayUI.DisplayModes.UpdateWithCurrentDeviceExcludeSchemes:
-					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.KeepDisplayingLastDevice)), label);
-					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.ExcludedControlSchemes)), label);
+				case HotkeyDisplayUIScopeElement.DisplayModes.UpdateWithCurrentDeviceExcludeSchemes:
+					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.KeepDisplayingLastDevice)), label);
+					height += UnityEditor.EditorGUI.GetPropertyHeight(property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.ExcludedControlSchemes)), label);
 					break;
 			}
 
@@ -452,30 +453,30 @@ namespace DevLocker.WiseInput.UIInputDisplay
 
 			lineRect.y += UnityEditor.EditorGUIUtility.singleLineHeight + UnityEditor.EditorGUIUtility.standardVerticalSpacing;
 
-			var mode = (HotkeyDisplayUI.DisplayModes) modeProperty.intValue;
+			var mode = (HotkeyDisplayUIScopeElement.DisplayModes) modeProperty.intValue;
 			UnityEditor.EditorGUI.indentLevel++;
 			switch(mode) {
-				case HotkeyDisplayUI.DisplayModes.UpdateWithCurrentDevice:
-					if (property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.DisplayedDeviceLayout)).stringValue != string.Empty) {
-						property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.DisplayedDeviceLayout)).stringValue = string.Empty;
+				case HotkeyDisplayUIScopeElement.DisplayModes.UpdateWithCurrentDevice:
+					if (property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.DisplayedDeviceLayout)).stringValue != string.Empty) {
+						property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.DisplayedDeviceLayout)).stringValue = string.Empty;
 					}
-					if (property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.ExcludedControlSchemes)).arraySize != 0) {
-						property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.ExcludedControlSchemes)).arraySize = 0;
+					if (property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.ExcludedControlSchemes)).arraySize != 0) {
+						property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.ExcludedControlSchemes)).arraySize = 0;
 					}
 					break;
 
-				case HotkeyDisplayUI.DisplayModes.DisplaySpecificDeviceIgnoringTheCurrentOne:
-					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.DisplayedDeviceLayout)));
+				case HotkeyDisplayUIScopeElement.DisplayModes.DisplaySpecificDeviceIgnoringTheCurrentOne:
+					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.DisplayedDeviceLayout)));
 					break;
-				case HotkeyDisplayUI.DisplayModes.UpdateWithCurrentDeviceOnlyForControlScheme:
-					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.KeepDisplayingLastDevice)), true);
+				case HotkeyDisplayUIScopeElement.DisplayModes.UpdateWithCurrentDeviceOnlyForControlScheme:
+					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.KeepDisplayingLastDevice)), true);
 					lineRect.y += UnityEditor.EditorGUIUtility.singleLineHeight + UnityEditor.EditorGUIUtility.standardVerticalSpacing;
-					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.DisplayedControlScheme)), true);
+					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.DisplayedControlScheme)), true);
 					break;
-				case HotkeyDisplayUI.DisplayModes.UpdateWithCurrentDeviceExcludeSchemes:
-					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.KeepDisplayingLastDevice)), true);
+				case HotkeyDisplayUIScopeElement.DisplayModes.UpdateWithCurrentDeviceExcludeSchemes:
+					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.KeepDisplayingLastDevice)), true);
 					lineRect.y += UnityEditor.EditorGUIUtility.singleLineHeight + UnityEditor.EditorGUIUtility.standardVerticalSpacing;
-					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUI.DisplayModeData.ExcludedControlSchemes)), true);
+					UnityEditor.EditorGUI.PropertyField(lineRect, property.FindPropertyRelative(nameof(HotkeyDisplayUIScopeElement.DisplayModeData.ExcludedControlSchemes)), true);
 					break;
 			}
 			UnityEditor.EditorGUI.indentLevel--;
